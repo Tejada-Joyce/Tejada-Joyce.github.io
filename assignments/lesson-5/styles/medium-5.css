@@ -1,0 +1,34 @@
+@media only screen and (min-width: 37.5em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
+    nav button { display:none; }  /* hamburger button does not need to be shown */
+
+    section.forecast { display: ???; }  /* show the 10-day forecast with the medium view and up */
+
+    /* responsive images */
+    main > .clearfix img{
+        float: left;
+    }
+
+    main article .clearfix img { 
+        float: right;
+        margin: 2em 2em 0 2em;
+        padding: 1em 0 1em 0;
+    }
+    
+    .clearfix {
+        margin: 0 7em 0 7em
+    }
+    
+    .town-article {
+        word-spacing: 1rem;
+        padding: 1em 1em 1em 1em;
+        border: 0 1em 0 1em
+    }
+}
+
+.forecast {
+    display: block;
+    margin: 2em 7em 2em 7em;
+    padding: 0.2em 0 1em 0
+}
