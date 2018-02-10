@@ -100,7 +100,7 @@ main p {
   overflow: auto;
 }
 
-.forecast {
+section .forecast {
     display: none;
 }
 
