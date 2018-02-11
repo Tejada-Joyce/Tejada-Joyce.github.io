@@ -1,7 +1,24 @@
 @media only screen and (min-width: 64em) {
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
   
+    article img { width: 29.333%; }
+
+    main .clearfix figure img{
+        float: left;
+    }
+
+    main h2 {
+        margin: 0.5em 1.72em 0 1.72em;
+        padding: 0.3em 0 0 0;
+    }
+    
+    main .clearfix {
+        overflow: auto;
+        margin: 0 7em 0 7em;
+    }
+    main article .town-article {
+        word-spacing: 1rem;
+        padding: 1em 1em 1em 1em;
+    }
   
 }
-
-

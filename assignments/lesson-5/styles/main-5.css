@@ -1,127 +1,114 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
-* {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}  
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
   font-size: 16px;
   /* Declare the base font-family - from google font api or other */
 }
 
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    margin: 0 auto;
+    width: 98%;
+}
+
 header {
     padding: 0;
 }
+    
 header h1 {
-    font-family: "Segoe Print", sans-serif;
-    font-size: 78px;
+    font-family: "the Blacklist","Segoe Print", sans-serif;
+    font-size: 3em;
     color: #6096f2; 
     text-align: center;
     margin-bottom: 0;
 }
+    
 header img {
     float: left;   
-    margin-left: 8em;
+    margin-left: auto;
+    width: 33%;
+    height: 33%;
+    max-width: 160px;
 }
 header .subheading {
-    font-family: "Segoe Print", sans-serif;
-    font-size: 30px;
+    font-family: "the Blacklist","Segoe Print", sans-serif;
+    font-size: 1.8em;
     color: #000000;
     text-align: center;
     margin-bottom: 1.5em;
 }
 
-nav {
-    margin:  0 1em 0 1em;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #6096f2;
-    font-family: "Bradley Hand ITC"; 
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: #ffffff;
-    text-align: center;
-    padding: 0.7em 4.1em 0.7em 4.1em;
-    text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: #111;
-}
-.active {
-    background-color: #2659b1;
-}
-
-section {
-    text-align: center;
-}
+nav {}
+nav button {}
+nav ul {}
+nav ul li {}
+nav ul li a {}
+nav ul li.active a {}
+nav ul li a:hover {}
 
 main h2, section, .forecast, .clearfix {
      background-color: #fddce7;
 }
-main {
+
+main h2, h3{
     text-align: center;
 }
 main h2 {
-    font-family: "Segoe Print", sans-serif;
-    font-size: 54px;
+    font-family: "the Blacklist", "Segoe Print", sans-serif;
+    font-size: 2.8em;
     color: #000000; 
-    margin: 1em 2.05em 0 2.05em;
-    padding: 0.3em 0 0 0;
+    margin: auto;
+    padding: auto;
+    
+}
+
+main figure img {
+    width: 100%;
+    max-width: 500px;
 }
 
 main h3 {
     font-family: Britannic, sans-serif;
-    font-size: 27px;
+    font-size: 1.69em;
     color: #000000; 
+}
+
+main picture {
+    width: 100%;
+    min-width: 100px;
+    max-width: 250px;
+    
 }
 
 main p {
     font-family: Calibri, sans-serif;
     color: #000000;
-    font-size: 25px;
+    font-size: 1.56em;
     text-align: left;
-}
-
-.clearfix {
-  overflow: auto;
 }
 
 section.forecast {
     display: none;
 }
 
+article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    width: 100%;
+    max-width: 300px;
+    padding-bottom: 5%;
+   /* fill the page in the small/phone view */
+  }
+
 footer {
     font-family: "Arial Narrow", sans-serif;
     background-color: #6096f2;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 1.3em;
     text-align: center;
     margin: 2em 1em 2em 1em;
     padding: 1em 0 1em 0;
 }
 
-table {
-    text-align: center;
-    font-family: Calibri, sans-serif;
-    font-size: 20px;
-    width: 90%;
-    margin: auto;   
-}
 
-table th, td {
-    border: 0.5px solid black;
-}
+/* Other Class Selectors */
