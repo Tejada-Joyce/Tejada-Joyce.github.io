@@ -74,7 +74,7 @@
 
     article img { width: 62.666%; float:right; }  /* responsive images */
 
-    main  .clearfix section picture { 
+    main .clearfix section picture { 
         float: left;
     }
     
