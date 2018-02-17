@@ -1,7 +1,11 @@
 @media only screen and (min-width: 64em) {
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
   
-    article img { width: 29.333%; }
+   main article.clearfix img { 
+        width: 300px;
+        height: 300px;
+        max-width: 300px;
+    }
     
     header h1 {
         font-size: 5.5em;
@@ -11,8 +15,13 @@
         font-size: 2em;
     }
     
+    header img { 
+        width: 160px;
+        max-width: 160px;
+    }
+    
     nav ul li a {
-    padding: 0.7rem 4.1rem 0.7rem 4.1rem;
+        padding: 0.6em 2em;
     }
     
     main .clearfix figure img{
@@ -29,8 +38,22 @@
         font-size: 1.69em;
     }
     
+    table {
+        font-size: 20px;
+        width: 90%;
+    }
+
+    table th, td {
+        border: 0.5px solid black;
+    }
+    
     main p {
         font-size: 1.56em;
+    }
+    main picture img {
+        width: 250px;
+        height: 250px;
+        max-width: 250px;
     }
     
     main .clearfix {
@@ -41,6 +64,10 @@
     main article .town-article {
         word-spacing: 1rem;
         padding: 0 1em 0 1em;
+    }
+    
+    footer {
+        font-size: 1.3em;
     }
   
 }

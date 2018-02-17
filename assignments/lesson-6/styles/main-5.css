@@ -19,7 +19,7 @@ header {
     
 header h1 {
     font-family: 'Dancing Script', cursive;
-    font-size: 3em;
+    font-size: 1.6em;
     color: #6096f2; 
     text-align: center;
     margin-bottom: 0;
@@ -27,14 +27,14 @@ header h1 {
     
 header img {
     float: left;   
-    margin-left: auto;
-    width: 33%;
-    height: 33%;
+    margin-left: 2em;
+    width: 50px;
     max-width: 160px;
 }
+
 header .subheading {
     font-family: 'Dancing Script', cursive;
-    font-size: 1.8em;
+    font-size: 0.7em;
     color: #000000;
     text-align: center;
     margin-bottom: 1.5em;
@@ -45,7 +45,8 @@ nav button {
     background-color: transparent;
     border: none;
     font-size: 1.6rem;
-    color: #052d84;}
+    color: #052d84;
+}
 
 nav {
     margin: 0 1em 0 1em;
@@ -59,7 +60,6 @@ nav ul {
     background-color: #6096f2;
     font-family: "Bradley Hand ITC"; 
 }
-
 
 
 nav ul li a {
@@ -91,7 +91,7 @@ main h2, h3{
 }
 main h2 {
     font-family: 'Dancing Script', cursive;
-    font-size: 2.8em;
+    font-size: 1.3em;
     color: #000000; 
     margin: auto;
 }
@@ -107,11 +107,10 @@ main h3 {
     color: #000000; 
 }
 
-main picture {
-    width: 100%;
-    min-width: 100px;
+main picture img{
+    width: 100px;
+    height: 100px;
     max-width: 250px;
-    
 }
 
 main p {
@@ -125,10 +124,11 @@ section.forecast {
     display: none;
 }
 
-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-    width: 100%;
+main article.clearfix img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    width: 100px;
+    height: 100px;
     max-width: 300px;
-    padding-bottom: 5%;
+    padding: 5%; 
    /* fill the page in the small/phone view */
   }
 
@@ -136,7 +136,7 @@ footer {
     font-family: "Arial Narrow", sans-serif;
     background-color: #6096f2;
     color: #ffffff;
-    font-size: 1.3em;
+    font-size: 0.5em;
     text-align: center;
     margin: 2em 1em 2em 1em;
     padding: 1em 0 1em 0;
