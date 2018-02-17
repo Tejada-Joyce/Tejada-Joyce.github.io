@@ -1,0 +1,65 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+  
+    nav button { 
+        display:none;
+    }  /* hamburger button does not need to be shown */
+    
+    nav ul li {
+     float: left;
+    }
+    nav ul li a {
+    padding: 0.6rem 0.2rem;
+    }
+    
+    nav ul.hide {
+        display: block;
+    }
+    
+    header h1 {
+        font-size: 2.7em;
+    }
+    
+    header img {
+        float: left;   
+        margin-left: 3.2em;
+    }
+    
+    header .subheading {
+        font-size: 0.9em;
+    }
+    
+    main h2 {
+        font-size: 2em;
+    }
+    
+    section.forecast { 
+        display: block;
+        margin: 2em 7em 2em 7em;
+        padding: 0.2em 0 1em 0;
+    }  /* show the 10-day forecast with the medium view and up */
+
+    table {
+        text-align: center;
+        font-family: Calibri, sans-serif;
+        font-size: 20px;
+        width: 90%;
+        margin: auto;   
+    }
+
+    table th, td {
+        border: 0.5px solid black;
+    }
+
+    article img { width: 62.666%; float:right; }  /* responsive images */
+
+    main section.clearfix picture { 
+        float: left;
+    }
+    
+    main article.clearfix img { 
+        float: right;
+        margin: 2em 2em 0 2em;
+        padding: 1em 0 1em 0;
+    } 
+}
