@@ -33,6 +33,13 @@
         font-size: 2em;
     }
     
+    main h3 {
+        font-size: 1em;
+    }
+    
+    main p {
+        font-size: 1em;
+    }
     section.forecast { 
         display: block;
         margin: 2em 7em 2em 7em;
@@ -51,15 +58,24 @@
         border: 0.5px solid black;
     }
 
-    article img { width: 62.666%; float:right; }  /* responsive images */
-
     main section.clearfix picture { 
         float: left;
+    }
+    
+    main .clearfix {
+        overflow: auto;
+        margin: 0 7em 0 7em;
     }
     
     main article.clearfix img { 
         float: right;
         margin: 2em 2em 0 2em;
         padding: 1em 0 1em 0;
+         width: 62.666%; 
     } 
+    
+    main article .town-article {
+        word-spacing: .5rem;
+        padding: 0 .7em 0 .7em;
+    }
 }
