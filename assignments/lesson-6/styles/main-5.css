@@ -1,9 +1,12 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
-* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+* {-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
-  font-size: 16px;
+    font-size: 16px;
+    background-color: white;
   /* Declare the base font-family - from google font api or other */
 }
 
@@ -42,14 +45,17 @@ header .subheading {
 
 nav button {
     margin: .2rem 2%;
-    background-color: transparent;
+    background-color: #6096f2;
     border: none;
-    font-size: 1.6rem;
-    color: #052d84;
+    font-size: 1rem;
+    color: #ffffff;
+    position: absolute;
+    top: 12%;
+    right: 2%;
 }
 
 nav {
-    margin: 0 1em 0 1em;
+    margin: 1em 0.1em;
     }
     
 nav ul {
@@ -93,12 +99,14 @@ main h2 {
     font-family: 'Dancing Script', cursive;
     font-size: 1.3em;
     color: #000000; 
-    margin: auto;
+    margin: auto ;
+    padding: 0.5em;
 }
 
 main figure img {
     width: 100%;
     max-width: 500px;
+    padding-top: 1em;
 }
 
 main h3 {
@@ -125,12 +133,16 @@ section.forecast {
 }
 
 main article.clearfix img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
     max-width: 300px;
-    padding: 5%; 
-   /* fill the page in the small/phone view */
+    margin: auto;
+      /* fill the page in the small/phone view */
   }
+
+main article p.town-article {
+    padding: 0 1em 1em;
+}
 
 footer {
     font-family: "Arial Narrow", sans-serif;
