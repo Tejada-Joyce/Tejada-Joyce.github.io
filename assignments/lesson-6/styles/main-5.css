@@ -13,7 +13,7 @@ body {
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
     margin: 0 auto;
-    width: 98%;
+    width: 95%;
 }
 
 header {
@@ -128,15 +128,28 @@ main p {
     text-align: left;
 }
 
+main section.clearfix {
+    overflow: auto;   
+}
+
+ main section.clearfix picture { 
+        float: left;
+}
+
 section.forecast {
     display: none;
 }
 
+main article.clearfix {
+    overflow: auto;   
+}
+
 main article.clearfix img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-    width: 130px;
-    height: 130px;
+    width: 100px;
+    height: 100px;
     max-width: 300px;
-    margin: auto;
+    padding: 0.5em;
+    float: right;
       /* fill the page in the small/phone view */
   }
 
