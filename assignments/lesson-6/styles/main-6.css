@@ -13,7 +13,7 @@ body {
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
     margin: 0 auto;
-    width: 95%;
+    width: 100%;
 }
 
 header {
@@ -67,7 +67,6 @@ nav ul {
     font-family: "Bradley Hand ITC"; 
 }
 
-
 nav ul li a {
     display: block;
     color: #ffffff;
@@ -95,6 +94,7 @@ main h2, section, .forecast, .clearfix {
 main h2, h3{
     text-align: center;
 }
+
 main h2 {
     font-family: 'Dancing Script', cursive;
     font-size: 1.3em;
@@ -133,7 +133,7 @@ main section.clearfix {
 }
 
  main section.clearfix picture { 
-        float: left;
+    float: left;
 }
 
 section.forecast {
@@ -151,7 +151,7 @@ main article.clearfix img {  /* This structure refers to img elements that are t
     padding: 0.5em;
     float: right;
       /* fill the page in the small/phone view */
-  }
+}
 
 main article p.town-article {
     padding: 0 1em 1em;
@@ -163,7 +163,7 @@ footer {
     color: #ffffff;
     font-size: 0.5em;
     text-align: center;
-    margin: 2em 1em 2em 1em;
+    margin-top: 1.5em;
     padding: 1em 0 1em 0;
 }
 
