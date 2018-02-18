@@ -38,6 +38,10 @@
         font-size: 1.69em;
     }
     
+    main section p {
+        font-size:1.3em;
+    }
+    
     section.forecast { 
         margin: 2em 7em 2em 7em;
     } 
@@ -51,7 +55,7 @@
         border: 0.5px solid black;
     }
     
-    main p {
+    main p.town-article {
         font-size: 1.56em;
     }
     main picture img {
