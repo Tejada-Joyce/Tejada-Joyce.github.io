@@ -2,9 +2,7 @@
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
   
    main article.clearfix img { 
-        width: 300px;
-        height: 300px;
-        max-width: 300px;
+        width: 50%;
     }
     
     header h1 {
@@ -16,9 +14,8 @@
     }
     
     header img { 
-        width: 160px;
-        max-width: 160px;
         margin-left: 6.5em;
+        margin-top: 3em;
     }
     
     nav ul li a {
@@ -59,12 +56,7 @@
     main p.town-article {
         font-size: 1.56em;
     }
-    main picture img {
-        width: 250px;
-        height: 250px;
-        max-width: 250px;
-    }
-    
+        
     main .clearfix {
         overflow: auto;
         margin: 0 7em 0 7em;

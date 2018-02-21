@@ -15,7 +15,7 @@
     </head>
     <body>
 
-      <header>
+      <header class="clearfix">
         <img src="images/images%20140-133.jpg" alt="The site logo" >
         <h1>The 24-7 Weather Teller</h1>
         <div class = "subheading">The weather you like or maybe not.</div>
@@ -46,20 +46,23 @@
             
             <section class="clearfix">
                 <h3>Weather Summary</h3>   
-                <picture>
-                    <img src="images/Sunny.png" alt="Sunny" width="250" height="250">
+                <picture class ="sunny">
+                        <img src="images/Sunny.png" alt="Sunny">
                 </picture>
-                <div class="highlow">
-                    <p>High: 90&deg;F</p>  
-                    <p>Low: 66&deg;F</p>  
+                
+                <div class ="summary">
+                    <div class="highlow">
+                        <p>High: 90&deg;F</p>  
+                        <p>Low: 66&deg;F</p>  
+                    </div>
+                    <div class="current">
+                        <h3>Sunny</h3>
+                    </div>   
+                    <div class="conditions">
+                        <p>Precipitation: 0&percnt;</p>  
+                        <p>Wind Speed: 5 mpg SW</p>  
+                    </div>  
                 </div>
-                <div class="current">
-                    <h3>Sunny</h3>
-                </div>   
-                <div class="conditions">
-                    <p>Precipitation: 0&percnt;</p>  
-                    <p>Wind Speed: 5 mpg SW</p>  
-                </div>           
             </section>
             
         </div>
@@ -99,7 +102,7 @@
         </section>
 
         <article class= "clearfix">
-                <img src="images/Franklin%20300px(x2).png" width="300" height="300" alt="Franklin"> 
+                <img src="images/Franklin%20300px(x2).png" alt="Franklin"> 
                 <h3>Franklin Breaks Record</h3>
                 <p class="town-article">
                     Franklin is a city just south of Nashville, in Tennessee. A key site of the American Civil War, it’s home to 2 properties exploring the 1864 Battle of Franklin: Carter House and Carnton Plantation, which includes the McGavock Confederate Cemetery. The 1858 Lotz House contains a large collection of 19th-century furniture. Downtown’s Main Street is lined with galleries, antique shops and restored Victorian buildings.

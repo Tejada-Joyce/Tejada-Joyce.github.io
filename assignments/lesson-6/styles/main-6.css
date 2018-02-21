@@ -16,6 +16,10 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
     width: 100%;
 }
 
+header.clearfix{
+    overflow: auto;
+}
+
 header {
     padding: 0;
 }
@@ -31,7 +35,8 @@ header h1 {
 header img {
     float: left;   
     margin-left: 2em;
-    width: 50px;
+    margin-top: 1em;
+    width: 13%;
     max-width: 160px;
 }
 
@@ -87,7 +92,7 @@ nav ul.hide {
     display: none;
 }
 
-main h2, section, .forecast, .clearfix {
+main h2, section, .forecast, main .clearfix {
      background-color: #fddce7;
 }
 
@@ -115,10 +120,19 @@ main h3 {
     color: #000000; 
 }
 
+main picture.sunny{
+    width: 35%;
+}
+
 main picture img{
-    width: 100px;
-    height: 100px;
+    float: left;   
+    width: 80%;
     max-width: 250px;
+}
+
+main .summary{
+    width: 70%;       
+    margin: auto;
 }
 
 main p {
@@ -130,6 +144,8 @@ main p {
 
 main section.clearfix {
     overflow: auto;   
+    margin-left: auto;
+    margin-right: auto;
 }
 
  main section.clearfix picture { 
@@ -145,11 +161,12 @@ main article.clearfix {
 }
 
 main article.clearfix img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-    width: 100px;
-    height: 100px;
+    width: 50%;
     max-width: 300px;
     padding: 0.5em;
-    float: right;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
       /* fill the page in the small/phone view */
 }
 
