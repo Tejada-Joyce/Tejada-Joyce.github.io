@@ -1,0 +1,210 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    background-color: white;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    margin: 0 auto;
+    width: 100%;
+}
+
+header.clearfix{
+    overflow: auto;
+}
+
+header {
+    padding: 0;
+}
+    
+header h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.6em;
+    color: #6096f2; 
+    text-align: center;
+    margin-bottom: 0;
+}
+    
+header img {
+    float: left;   
+    margin-left: 2em;
+    margin-top: 1em;
+    width: 13%;
+    max-width: 160px;
+}
+
+header .subheading {
+    font-family: 'Dancing Script', cursive;
+    font-size: 0.7em;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: #6096f2;
+    border: none;
+    font-size: 1rem;
+    color: #ffffff;
+    position: absolute;
+    top: 12%;
+    right: 2%;
+}
+
+nav {
+    margin: 1em 0.1em;
+    }
+    
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #6096f2;
+    font-family: "Bradley Hand ITC"; 
+}
+
+nav ul li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.6rem 2rem;
+    text-decoration: none;
+}
+
+nav ul li.active a {
+    background-color: #2659b1;
+}
+
+nav ul li a:hover {
+    background-color: #052d84;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+main h2, section, .forecast, main .clearfix {
+     background-color: #fddce7;
+}
+
+main h2, h3{
+    text-align: center;
+}
+
+main h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.3em;
+    color: #000000; 
+    margin: auto ;
+    padding: 0.5em;
+}
+
+main figure img {
+    width: 100%;
+    max-width: 500px;
+    padding-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main h3 {
+    font-family: Britannic, sans-serif;
+    font-size: 0.6em;
+    color: #000000; 
+}
+
+main picture.sunny{
+    width: 35%;
+}
+
+main picture img{
+    float: left;   
+    width: 80%;
+    max-width: 250px;
+}
+
+main .summary{
+    width: 70%;       
+    margin: auto;
+}
+
+main p {
+    font-family: Calibri, sans-serif;
+    color: #000000;
+    font-size: 0.5em;
+    text-align: left;
+}
+
+main section.clearfix {
+    overflow: auto;   
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ main section.clearfix picture { 
+    float: left;
+}
+
+section.forecast {
+    display: none;
+}
+
+main article.clearfix {
+    overflow: auto;   
+}
+
+main article.clearfix img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    width: 50%;
+    max-width: 300px;
+    padding: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+      /* fill the page in the small/phone view */
+}
+
+main article p.town-article {
+    padding: 0 1em 1em;
+}
+
+footer {
+    font-family: "Arial Narrow", sans-serif;
+    background-color: #6096f2;
+    color: #ffffff;
+    font-size: 0.5em;
+    text-align: center;
+    margin-top: 1.5em;
+    padding: 1em 0 1em 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    text-align: center;
+    padding-top: 1em; 
+}
+
+.gallery-image{
+    width: 100%;
+    max-width: 400px;
+    background: #fddce7;
+    padding: 5%;
+    margin-left: auto;
+    margin-right: auto;       
+}
+
+.gallery-image img{
+    width: 90%;  
+}
+
+/* Other Class Selectors */
