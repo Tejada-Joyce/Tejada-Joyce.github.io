@@ -5,11 +5,19 @@
         display:none;
     }  /* hamburger button does not need to be shown */
     
-    nav ul li {
-        float: left;
+    nav #primaryNav{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
     }
+    
+    nav #primaryNav li{
+        flex-grow: 1;
+    }
+    
     nav ul li a {
-        padding: 0.7rem 0.3rem;
+        padding: 0.8rem 0.3rem ;
     }
     
     nav ul.hide {
@@ -56,15 +64,15 @@
     }
     
     main > .flexbox {
-         margin: 0 3.6em 0 3.6em;
+        margin: 0 3.6em 0 3.6em;
     }
     
     main .flexbox > img {
-    width: 100%;
-    max-width: 500px;
-    padding: 1%;
-    display: flex;
-    margin: 0 auto;
+        width: 100%;
+        max-width: 500px;
+        padding: 1%;
+        display: flex;
+        margin: 0 auto;
     }
     
     main article.container{
@@ -86,8 +94,7 @@
         word-spacing: .5rem;
         padding: 0 0.7em 0 0.7em;
     }
-    
-    
+      
     footer {
         font-size: 0.8em;
     }
