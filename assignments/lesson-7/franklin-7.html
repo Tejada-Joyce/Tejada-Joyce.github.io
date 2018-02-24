@@ -15,10 +15,12 @@
     </head>
     <body>
 
-      <header class="clearfix">
+      <header class="container">
         <img src="images/images%20140-133.jpg" alt="The site logo" >
-        <h1>The 24-7 Weather Teller</h1>
-        <div class = "subheading">The weather you like or maybe not.</div>
+        <div>
+          <h1>The 24-7 Weather Teller</h1>
+            <div class = "subheading">The weather you like or maybe not.</div>
+        </div>
       </header>
 
       <!-- site navigation use placeholder references -->
@@ -36,36 +38,33 @@
 
       <main>
         <h2>The City of Franklin</h2>
-        <div class="clearfix">
-            <figure>
-              <img src="images/franklin-85.jpg" alt="Franklin" sizes= "60vw" 
-                   srcset="images/franklin-200px.jpg 200w,
-                           images/franklin-500px.jpg 500w,
-                           images/franklin-800px.jpg 800w">
-            </figure>
-            
-            <section class="clearfix">
+        <div class="flexbox">
+            <img src="images/franklin-85.jpg" alt="Franklin" sizes= "60vw" 
+                srcset="images/franklin-200px.jpg 200w,
+                       images/franklin-500px.jpg 500w,
+                       images/franklin-800px.jpg 800w">
+            <div>
                 <h3>Weather Summary</h3>   
-                <picture class ="sunny">
-                        <img src="images/Sunny.png" alt="Sunny">
-                </picture>
-                
-                <div class ="summary">
-                    <div class="highlow">
-                        <p>High: <span id="high">90</span>&deg;F</p>  
-                        <p>Low: <span id="low">66&deg;</span>F</p>  
+                <section class="container">
+                    <img src="images/Sunny.png" alt="Sunny">
+                    <div>
+                        <div class ="summary">
+                            <div class="highlow">
+                                <p>High: <span id="high">90</span>&deg;F</p>  
+                                <p>Low: <span id="low">66&deg;</span>F</p>  
+                            </div>
+                            <div class="current">
+                                <p>Sunny</p>
+                            </div>
+                            <div class="conditions">
+                                <p>Precipitation: 0&percnt;</p>  
+                                <p>Wind Speed: <span id="speed">5</span> mpg SW</p>  
+                                <p>Wind Chill Temperature: <span id="temperature"></span>&deg;F</p>
+                            </div>  
+                        </div>
                     </div>
-                    <div class="current">
-                        <h3>Sunny</h3>
-                    </div>   
-                    <div class="conditions">
-                        <p>Precipitation: 0&percnt;</p>  
-                        <p>Wind Speed: <span id="speed">5</span> mpg SW</p>  
-                        <p>Wind Chill Temperature: <span id="temperature"></span>&deg;F</p>
-                    </div>  
-                </div>
-            </section>
-            
+                </section>
+            </div>  
         </div>
 
         <section class="forecast">
@@ -102,12 +101,14 @@
           </table>
         </section>
 
-        <article class= "clearfix">
+        <article class= "container">
                 <img src="images/Franklin%20300px(x2).png" alt="Franklin"> 
-                <h3>Franklin Breaks Record</h3>
-                <p class="town-article">
-                    Franklin is a city just south of Nashville, in Tennessee. A key site of the American Civil War, it’s home to 2 properties exploring the 1864 Battle of Franklin: Carter House and Carnton Plantation, which includes the McGavock Confederate Cemetery. The 1858 Lotz House contains a large collection of 19th-century furniture. Downtown’s Main Street is lined with galleries, antique shops and restored Victorian buildings.
-                </p>
+                <div>
+                    <h3>Franklin Breaks Record</h3>
+                    <p class="town-article">
+                        Franklin is a city just south of Nashville, in Tennessee. A key site of the American Civil War, it’s home to 2 properties exploring the 1864 Battle of Franklin: Carter House and Carnton Plantation, which includes the McGavock Confederate Cemetery. The 1858 Lotz House contains a large collection of 19th-century furniture. Downtown’s Main Street is lined with galleries, antique shops and restored Victorian buildings.
+                    </p>
+                </div>
         </article>		  
 
       </main>

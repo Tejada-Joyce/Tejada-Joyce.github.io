@@ -16,8 +16,11 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
     width: 100%;
 }
 
-header.clearfix{
-    overflow: auto;
+header.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
 }
 
 header {
@@ -32,12 +35,11 @@ header h1 {
     margin-bottom: 0;
 }
     
-header img {
-    float: left;   
-    margin-left: 2em;
-    margin-top: 1em;
-    width: 13%;
+header.container img { 
+    width: 15%;
     max-width: 160px;
+    padding-left: 1%;
+    padding-top: 1%;
 }
 
 header .subheading {
@@ -73,9 +75,10 @@ nav ul {
 }
 
 nav ul li a {
-    display: block;
+    display: flex;
     color: #ffffff;
     text-align: center;
+    justify-content: center;
     padding: 0.6rem 2rem;
     text-decoration: none;
 }
@@ -92,7 +95,7 @@ nav ul.hide {
     display: none;
 }
 
-main h2, section, .forecast, main .clearfix {
+main h2, section, .forecast, main .flexbox, main .container {
      background-color: #fddce7;
 }
 
@@ -108,28 +111,18 @@ main h2 {
     padding: 0.5em;
 }
 
-main figure img {
+main .flexbox>img {
     width: 100%;
     max-width: 500px;
-    padding-top: 1em;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 2%;
+    display: flex;
+    margin: 1em auto 0 auto;
 }
 
 main h3 {
     font-family: Britannic, sans-serif;
-    font-size: 0.6em;
+    font-size: 0.8em;
     color: #000000; 
-}
-
-main picture.sunny{
-    width: 35%;
-}
-
-main picture img{
-    float: left;   
-    width: 80%;
-    max-width: 250px;
 }
 
 main .summary{
@@ -140,40 +133,49 @@ main .summary{
 main p {
     font-family: Calibri, sans-serif;
     color: #000000;
-    font-size: 0.5em;
+   font-size: 0.8em;
     text-align: left;
 }
 
-main section.clearfix {
-    overflow: auto;   
-    margin-left: auto;
-    margin-right: auto;
+main section.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
- main section.clearfix picture { 
-    float: left;
+main section.container img {   
+    width: 25%;
+    max-width: 250px;
+    flex-grow: 2;  
+}
+
+main section.container > div {
+    flex-grow: 3; 
+}
+
+main .current p {
+    text-transform: uppercase;
 }
 
 section.forecast {
     display: none;
 }
 
-main article.clearfix {
-    overflow: auto;   
-}
-
-main article.clearfix img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+main article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
     width: 50%;
     max-width: 300px;
-    padding: 0.5em;
+    margin-top: 1em;
+    padding-top: 0.8em;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
-    display: block;
-      /* fill the page in the small/phone view */
+   /* fill the page in the small/phone view */
 }
 
 main article p.town-article {
     padding: 0 1em 1em;
+    word-spacing: 0.2rem;
 }
 
 footer {

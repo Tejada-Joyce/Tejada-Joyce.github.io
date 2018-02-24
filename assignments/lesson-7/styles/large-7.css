@@ -1,9 +1,5 @@
 @media only screen and (min-width: 64em) {
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
-  
-   main article.clearfix img { 
-        width: 50%;
-    }
     
     header h1 {
         font-size: 5.5em;
@@ -13,19 +9,17 @@
         font-size: 2em;
     }
     
-    header img { 
-        margin-left: 6.5em;
-        margin-top: 3em;
-    }
-    
     nav ul li a {
         padding: 0.8rem 2rem;
     }
     
-    main .clearfix figure img{
-        float: left;
+    main > .flexbox {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
     }
-
+    
     main h2 {
         margin: 0.5em 1.75em 0 1.75em;
         padding: 0.3em 0 0 0;
@@ -57,9 +51,12 @@
         font-size: 1.56em;
     }
         
-    main .clearfix {
-        overflow: auto;
+    main article.container, main .flexbox{
         margin: 0 7em 0 7em;
+    }
+    
+    main article.container img { 
+        padding: 1em;
     }
     
     main article .town-article {
