@@ -13,6 +13,14 @@
         padding: 0.8rem 2rem;
     }
     
+    main section .container1 img {   
+        margin-left: auto;
+    }
+    
+    main section .container1 > div {
+        margin-left: auto;
+    }
+        
     main > .flexbox {
         display: flex;
         justify-content: space-around;

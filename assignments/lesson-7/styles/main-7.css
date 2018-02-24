@@ -137,21 +137,21 @@ main p {
     text-align: left;
 }
 
-main section.container {
+main section .container1 {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     align-content: center;
 }
 
-main section.container img {   
+main section .container1 img {   
     width: 25%;
     max-width: 250px;
-    flex-grow: 2;  
+    flex-grow: 1;
 }
 
-main section.container > div {
-    flex-grow: 3; 
+main section .container1 > div {
+    flex-grow: 2;
 }
 
 main .current p {

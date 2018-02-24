@@ -45,6 +45,14 @@
         font-size: 1em;
     }
     
+    main section .container1 img {   
+        margin-left: 4em;
+    }
+    
+    main section .container1 > div {
+        margin-left: 4em;
+    }
+    
     section.forecast { 
         display: block;
         margin: 2em 3.6em 2em 3.6em;
