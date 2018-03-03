@@ -211,7 +211,24 @@ footer {
 
 form#w-form {
     margin-top: 1em; 
+    padding: 0.5em 1em;
     background-color: #fddce7;
+}
+
+form fieldset {
+    margin: 1.2em auto;
+    border-radius: 7px;
+}
+
+form legend {
+    color: #ffffff;
+    margin-left: 5%;
+    padding: 0.6em;
+    border: 1px solid black;
+    background-color: #60a6f0;
+    border-radius: 0.3em;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2em;
 }
 
 form label {
@@ -222,28 +239,35 @@ form label {
 form label span {
     display: block;
     padding-top: 0.9em;
-    padding-bottom: 0.2em;   
+    padding-bottom: 0.2em;  
+    font-family: Britannic, sans-serif;
+    font-size: 0.9em;
 }
 
-label, input, datalist, select {
+input, select, .radio, #types {
     font-family: Calibri, sans-serif;
     font-size: 0.8em;
 }
 
+select, .radio {
+    margin-left: 0.5em;
+}
+
 input.submitBt {
     -webkit-appearance:none;
-    color: snow;
-    border: solid 1px #111;
+    font-family: 'Dancing Script', cursive;
+    color: #ffffff;
+    border: 1px solid #111;
     border-radius: 7px;
     width: 50%;
     margin: 0.5em;
     font-size: 1em;
     padding: 0.6em;
-    background: #7d2a35;
+    background-color: #2659b1;
     box-shadow: 4px 4px 10px #666;
 }
 
-main.thanks{
+main.thanks {
     background-color: #fddce7;
     padding: 0.6em ;
 }

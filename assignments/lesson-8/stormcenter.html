@@ -38,36 +38,40 @@
         <main>
             <h2>Storm Center</h2>
             <form action="thanks.html" method="post" enctype="multipart/form-data" name="w-form" id="w-form">
-                <label><span>Full Name:</span><input name="fullname" type="text" value="" pattern="[a-zA-Z .-_]{5,99}" required></label>
-                <label><span>Email:</span><input name="email" type="email" value="" placeholder="ariel123@gmail.com"></label>
-                <label><span>Phone Number:</span><input name="phone" type="tel" value="" required></label>
-                <label><span>Zip Code:</span><input name="zipcode" type="number" value="" required></label>
-                <label><span>Storm Date:</span><input name="date" type="date" value=""></label>
-                <label><span>Storm Type:</span><input name="type" list="types" value=""></label>
-                    <datalist id="types">
-                      <option value="Flash Flood">
-                      <option value="Hail">
-                      <option value="Hurricane">
-                      <option value="Thunderstorm">
-                      <option value="Tornado">
-                    </datalist>
-                
-                <label><span>Storm Severity:</span><input name="severity" type="range" min="1" max="10" value="5"></label>
-                <label><span>Storm Region:</span></label>
-                    <select name="regions">
-                        <option value="select" disabled>Select Region ...</option>
-                        <option value="franklin">Franklin</option>
-                        <option value="greenville">Greenville</option>
-                        <option value="springfield">Springfield</option>
-                    </select>
-                
-                <label><span>User in Danger Level:</span></label>
-                    <input type="radio" name="danger" value="yes">Yes<br>
-                    <input type="radio" name="danger" value="maybe">Maybe<br>
-                    <input type="radio" name="danger" value="no">No
-                
-                <label><span>Additional Information or Comments:</span><textarea name="message" rows="10" cols="30"></textarea></label>
-                
+                <fieldset>
+                    <legend><span>Personal Information</span></legend>
+                    <label><span>Full Name:</span><input name="fullname" type="text" value="" pattern="[a-zA-Z .-_]{5,99}" placeholder="Full Name"required></label>
+                    <label><span>Email:</span><input name="email" type="email" value="" placeholder="ariel123@gmail.com"></label>
+                    <label><span>Phone Number:</span><input name="phone" type="tel" value="" placeholder="2224567991" pattern="[0-9]{10,20}"required></label>
+                    <label><span>Zip Code:</span><input name="zipcode" type="number" value="" placeholder="20020"required></label>
+                </fieldset>
+                <fieldset>
+                    <legend><span>Storm Information</span></legend>
+                    <label><span>Storm Date:</span><input name="date" type="date" value=""></label>
+                    <label><span>Storm Type:</span><input name="type" list="types" value=""></label>
+                        <datalist id="types">
+                          <option value="Flash Flood">
+                          <option value="Hail">
+                          <option value="Hurricane">
+                          <option value="Thunderstorm">
+                          <option value="Tornado">
+                        </datalist>                
+                    <label><span>Storm Severity:</span><input name="severity" type="range" min="1" max="10" value="5"></label>
+                    <label><span>Storm Region:</span></label>
+                        <select name="regions">
+                            <option value="select" selected disabled>Select Region ...</option>
+                            <option value="franklin">Franklin</option>
+                            <option value="greenville">Greenville</option>
+                            <option value="springfield">Springfield</option>
+                        </select>                
+                    <label><span>User in Danger Level:</span></label>
+                        <div class="radio">
+                            <input type="radio" name="danger" value="yes">Yes<br>
+                            <input type="radio" name="danger" value="maybe">Maybe<br>
+                            <input type="radio" name="danger" value="no">No
+                        </div>
+                    <label><span>Additional Information or Comments:</span><textarea name="message" rows="10" cols="30"></textarea></label>
+                </fieldset>
                 <input type="submit" value="Submit" class="submitBt">
             </form>
         </main>
