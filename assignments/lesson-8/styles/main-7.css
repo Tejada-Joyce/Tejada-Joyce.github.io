@@ -244,9 +244,14 @@ form label span {
     font-size: 0.9em;
 }
 
-input, select, .radio, #types {
+input, select, .radio, #types, #ratingvalue {
     font-family: Calibri, sans-serif;
     font-size: 0.8em;
+}
+
+#ratingvalue{
+    padding: 0;
+    margin-left: 0.5em;
 }
 
 select, .radio {

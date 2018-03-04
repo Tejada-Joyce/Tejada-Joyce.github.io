@@ -122,7 +122,7 @@
         font-size: 1.2em;
     }
     
-    input, select, .radio, #types {
+    input, select, .radio, #types, #ratingvalue {
         font-size: 1em;
     }
     
