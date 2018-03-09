@@ -1,0 +1,111 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    
+    header h1 {
+        font-size: 5.5em;
+    }
+    
+    header .subheading {
+        font-size: 2em;
+    }
+    
+    nav ul li a {
+        padding: 0.8rem 2rem;
+    }
+    
+    main section .container1 img {   
+        margin-left: auto;
+    }
+    
+    main section .container1 > div {
+        margin-left: auto;
+    }
+        
+    main > .flexbox {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+    }
+    
+    main h2 {
+        margin: 0.5em 1.75em 0 1.75em;
+        padding: 0.3em 0 0 0;
+        font-size: 4em;
+    }
+    
+    main h3 {        
+        font-size: 1.69em;
+    }
+    
+    main section p, article ul li {
+        font-size:1.3em;
+    }
+    
+    section.forecast { 
+        margin: 2em 7em 2em 7em;
+    } 
+    
+    table {
+        font-size: 20px;
+        width: 90%;
+    }
+
+    table th, td {
+        border: 0.5px solid black;
+    }
+    
+    main p.town-article {
+        font-size: 1.56em;
+    }
+        
+    main article.container, main .flexbox{
+        margin: 0 7em 0 7em;
+    }
+    
+    main article.container img { 
+        padding: 1em;
+    }
+    
+    main article .town-article {
+        word-spacing: 1rem;
+        padding: 0 1em 0 1em;
+    }
+    
+    footer {
+        font-size: 1.3em;
+    }
+    
+    main > .grid {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 2em 7em 0;
+    }
+    
+    .gallery-image:hover{
+        box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    form#w-form {
+        margin: 2em 7em; 
+    }
+    
+    form legend {
+        font-size: 2em;
+    }
+    
+    form label span {
+        font-size: 1.5em;
+    }
+    
+    input, select, .radio, #types, #ratingvalue{
+        font-size: 1.2em;
+    }
+    
+    input.submitBt {
+        font-size: 1.5em;
+    }
+    
+   section.grid {
+        grid-template-columns: repeat(3, 1fr);    
+    }
+}

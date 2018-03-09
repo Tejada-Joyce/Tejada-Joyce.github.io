@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The 24-7 Weather Teller</title>
+        <meta name="author" content="Joyce Tejada">
+        <meta name="description" content="Assignment of a Weather Site Project in CIT 230.">
+        <!-- external style references in the proper cascading order -->    
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700" rel="stylesheet"> <!-- Google API font reference -->
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="styles/main-7.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium-7.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large-7.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+    </head>
+    <body>
+        <header class="container">
+            <img src="images/images%20140-133.jpg" alt="The site logo" >
+            <div>
+              <h1>The 24-7 Weather Teller</h1>
+                <div class = "subheading">The weather you like or maybe not.</div>
+            </div>
+        </header>
+
+        <!-- site navigation use placeholder references -->
+        <nav>
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="franklin-7.html">FRANKLIN</a></li>
+                <li><a href="#">GREENVILLE</a></li>
+                <li><a href="#">SPRINGFIELD</a></li>
+                <li><a href="stormcenter.html">STORM CENTER</a></li>
+                <li><a href="gallery-7.html">GALLERY</a></li>
+            </ul>		
+        </nav>
+        
+        <main class="thanks">
+            <h3>Thank you for filling out the form!</h3>
+            <p>We are always looking forward to keep our visitors up to date, and that is why we appreciate your help.</p>
+        </main>
+        
+        <footer>
+            <aside>
+                123 Main St.<br>
+                Franklin, MU 83454<br>
+                (999) 999 9999 <br>
+                contact@theurl.com
+            </aside>
+            <p class="footer-bar">&copy;2018 All Rights Reserved &vert; The 24-7 Weather Teller &vert; <span id="currentdate"></span></p>
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+    </body>
+</html>
