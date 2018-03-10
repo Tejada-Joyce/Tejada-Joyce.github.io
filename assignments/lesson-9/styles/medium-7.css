@@ -41,7 +41,7 @@
         font-size: 1.3em;
     }
     
-    main p, article ul li {
+    main p, article.info ul li {
         font-size: 1em;
     }
     

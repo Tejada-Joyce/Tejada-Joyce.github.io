@@ -38,7 +38,7 @@
         font-size: 1.69em;
     }
     
-    main section p, article.info p, p.w-story {
+    main section p, article.info p, article.info ul li, p.w-story {
         font-size:1.3em;
     }
     

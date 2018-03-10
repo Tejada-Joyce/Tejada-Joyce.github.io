@@ -130,7 +130,7 @@ main .summary{
     margin: auto;
 }
 
-main p {
+main p, article.info ul li {
     font-family: Calibri, sans-serif;
     color: #000000;
     font-size: 0.8em;
@@ -293,7 +293,7 @@ main.thanks p{
     text-align: center;
 }
 
-article ul li{
+article.info ul li{
     margin: 2%;
 }
 
@@ -307,14 +307,19 @@ section > article {
 article.info {
     padding: 3%;
     margin-top: 1em;
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
 }
 
 article.info h3 {
     margin-top: 0;
+    -webkit-column-span: all; /* Chrome, Safari, Opera */
+    column-span: all;
 }
 
 article.info p {
-    text-align: center;
+    margin-top: 0;
 }
 
 article.flexbox1 {
@@ -322,6 +327,7 @@ article.flexbox1 {
     margin-top: 1em;
     padding-top: 1%;
 }
+
 
 
 /* Other Class Selectors */
