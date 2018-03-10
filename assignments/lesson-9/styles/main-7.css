@@ -95,7 +95,7 @@ nav ul.hide {
     display: none;
 }
 
-main h2, div>section, .forecast, main .flexbox, main .container {
+main h2, div>section, .forecast, main .flexbox, main .container, article.info, .flexbox1 {
      background-color: #fddce7;
 }
 
@@ -130,7 +130,7 @@ main .summary{
     margin: auto;
 }
 
-main p, article ul li {
+main p {
     font-family: Calibri, sans-serif;
     color: #000000;
     font-size: 0.8em;
@@ -173,10 +173,22 @@ main article img {  /* This structure refers to img elements that are the poster
    /* fill the page in the small/phone view */
 }
 
-main article p.town-article {
+.flexbox1>img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    width: 50%;
+    max-width: 500px;
+    padding-bottom: 0.8em;
+    display: flex;
+    margin: 0 auto;
+    
+   /* fill the page in the small/phone view */
+}
+
+main article p.town-article, p.w-story {
     padding: 0 1em 1em;
     word-spacing: 0.2rem;
+    margin-bottom: 0;
 }
+
 
 footer {
     font-family: "Arial Narrow", sans-serif;
@@ -281,10 +293,6 @@ main.thanks p{
     text-align: center;
 }
 
-section.forecast> p {
-    text-align: center;
-}
-
 article ul li{
     margin: 2%;
 }
@@ -295,5 +303,25 @@ section > article {
     padding: 5%;
     box-shadow: 5px 4px 8px 5px rgba(0, 0, 0, 0.2);
 }
+
+article.info {
+    padding: 3%;
+    margin-top: 1em;
+}
+
+article.info h3 {
+    margin-top: 0;
+}
+
+article.info p {
+    text-align: center;
+}
+
+article.flexbox1 {
+    box-shadow: 5px 4px 8px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 1em;
+    padding-top: 1%;
+}
+
 
 /* Other Class Selectors */

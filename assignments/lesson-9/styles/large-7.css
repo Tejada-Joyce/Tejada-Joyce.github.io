@@ -38,11 +38,11 @@
         font-size: 1.69em;
     }
     
-    main section p, article ul li {
+    main section p, article.info p, p.w-story {
         font-size:1.3em;
     }
     
-    section.forecast { 
+    section.forecast, article.info { 
         margin: 2em 7em 2em 7em;
     } 
     
@@ -59,17 +59,12 @@
         font-size: 1.56em;
     }
         
-    main article.container, main .flexbox{
+    main article.container, main .flexbox, .flexbox1{
         margin: 0 7em 0 7em;
     }
     
-    main article.container img { 
+    main article.container img, .flexbox1>img { 
         padding: 1em;
-    }
-    
-    main article .town-article {
-        word-spacing: 1rem;
-        padding: 0 1em 0 1em;
     }
     
     footer {
@@ -105,7 +100,4 @@
         font-size: 1.5em;
     }
     
-   section.grid {
-        grid-template-columns: repeat(3, 1fr);    
-    }
 }
