@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The 24-7 Weather Teller</title>
+        <meta name="author" content="Joyce Tejada">
+        <meta name="description" content="Assignment of a Weather Site Project in CIT 230.">
+        <!-- external style references in the proper cascading order -->    
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700" rel="stylesheet"> <!-- Google API font reference -->
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+    </head>
+    <body>
+
+        <header class="container">
+            <img src="images/images%20140-133.jpg" alt="The site logo" >
+            <div>
+              <h1>The 24-7 Weather Teller</h1>
+                <div class = "subheading">The weather you like or maybe not.</div>
+            </div>
+        </header>
+
+        <!-- site navigation use placeholder references -->
+        <nav>
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li class="active"><a href="#">HOME</a></li>
+                <li><a href="franklin.html">FRANKLIN</a></li>
+                <li><a href="greenville.html">GREENVILLE</a></li>
+                <li><a href="springfield.html">SPRINGFIELD</a></li>
+                <li><a href="stormcenter.html">STORM CENTER</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+            </ul>		
+        </nav>
+        <main>   
+            <article class="flexbox1">
+                <div>
+                    <h3>Weather Story</h3>
+                    <p class="w-story">In rhoncus libero non scelerisque lacinia. Phasellus ornare nibh orci, vel convallis quam fringilla quis. Vestibulum tristique, purus nec maximus tincidunt, nisl urna iaculis felis, nec tristique arcu nisi id velit. Nam mattis aliquam arcu, eu cursus purus mattis in. Praesent ante magna, pulvinar vel nulla ut, laoreet vestibulum libero. Quisque placerat massa sed leo vehicula, vitae ultricies sapien faucibus.</p>
+                </div>
+                <img src="images/weather.jpg" alt="Weather">
+                
+            </article>
+            <section class="grid">
+
+            </section>
+        </main>   
+
+        <footer>
+            <aside>
+                123 Main St.<br>
+                Franklin, MU 83454<br>
+                (999) 999 9999 <br>
+                contact@theurl.com
+            </aside>
+            <p class="footer-bar">&copy;2018 All Rights Reserved &vert; The 24-7 Weather Teller &vert; <span id="currentdate"></span></p>
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script>
+            var section = document.querySelector('section');
+            var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+            var request = new XMLHttpRequest();
+            request.open('GET', requestURL);
+            request.responseType = 'json';
+            request.send();
+            request.onload = function() {
+                var towns = request.response;
+                showTowns(towns);
+            }
+            function showTowns(jsonObj) {
+                var towns = jsonObj['towns'];
+
+                for (var i = 0; i < towns.length; i++) {
+                    if (i === 2) { continue; }
+                    var myArticle = document.createElement('article');
+                    var myH3 = document.createElement('h3');
+                    var myPara1 = document.createElement('p');
+                    var myPara2 = document.createElement('p');
+                    var myPara3 = document.createElement('p');
+                    var myPara4 = document.createElement('p');
+                   
+                    myH3.textContent = towns[i].name;
+                    myPara1.textContent = 'Motto: ' + towns[i].motto;
+                    myPara2.textContent = 'Year Founded: ' + towns[i].yearFounded;
+                    myPara3.textContent = 'Current Population: ' + towns[i].currentPopulation;
+                    myPara4.textContent = 'Average Rainfall: ' + towns[i].averageRainfall;
+                    
+                    myArticle.appendChild(myH3);
+                    myArticle.appendChild(myPara1);
+                    myArticle.appendChild(myPara2);
+                    myArticle.appendChild(myPara3);
+                    myArticle.appendChild(myPara4);
+                    
+                    section.appendChild(myArticle);
+                } 
+            }
+        
+        </script>
+    </body>
+</html>

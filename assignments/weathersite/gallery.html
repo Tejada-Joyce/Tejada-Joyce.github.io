@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The 24-7 Weather Teller</title>
+        <meta name="author" content="Joyce Tejada">
+        <meta name="description" content="Assignment of a Weather Site Project in CIT 230.">
+        <!-- external style references in the proper cascading order -->    
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700" rel="stylesheet"> <!-- Google API font reference -->
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+    </head>
+    <body>
+
+        <header class="container">
+            <img src="images/images%20140-133.jpg" alt="The site logo" >
+            <div>
+              <h1>The 24-7 Weather Teller</h1>
+                <div class = "subheading">The weather you like or maybe not.</div>
+            </div>
+        </header>
+
+        <!-- site navigation use placeholder references -->
+        <nav>
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">HOME</a></li>
+                <li ><a href="franklin.html">FRANKLIN</a></li>
+                <li><a href="greenville.html">GREENVILLE</a></li>
+                <li><a href="springfield.html">SPRINGFIELD</a></li>
+                <li><a href="stormcenter.html">STORM CENTER</a></li>
+                <li class="active"><a href="#">GALLERY</a></li>
+            </ul>		
+        </nav>
+        
+        <main>
+            <h2>Gallery</h2>
+            <div class = "grid">
+                <div class = "gallery-image">
+                    <img src="images/sunny-400.jpg" alt= "sunny">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce faucibus sollicitudin justo, sed dignissim est rutrum non. Nullam vitae est ut elit pharetra cursus.</p>
+                </div>
+                <div class = "gallery-image">
+                    <img src="images/foggy-400.jpg" alt= "foggy">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce faucibus sollicitudin justo, sed dignissim est rutrum non. Nullam vitae est ut elit pharetra cursus.</p>
+                </div>
+                <div class = "gallery-image">
+                    <img src="images/cloudy-400.jpg" alt= "cloudy">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce faucibus sollicitudin justo, sed dignissim est rutrum non. Nullam vitae est ut elit pharetra cursus.</p>
+                </div>
+                <div class = "gallery-image">
+                    <img src="images/rainy-400.jpg" alt= "rainy">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce faucibus sollicitudin justo, sed dignissim est rutrum non. Nullam vitae est ut elit pharetra cursus.</p>
+                </div>
+                <div class = "gallery-image">
+                    <img src="images/snowy-400.jpg" alt= "snowy">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce faucibus sollicitudin justo, sed dignissim est rutrum non. Nullam vitae est ut elit pharetra cursus.</p>
+                </div>
+                <div class = "gallery-image">
+                    <img src="images/stormy-400.jpg" alt= "stormy">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce faucibus sollicitudin justo, sed dignissim est rutrum non. Nullam vitae est ut elit pharetra cursus.</p>
+                </div>
+            </div>
+        </main>
+                
+        <footer>
+            <aside>
+                123 Main St.<br>
+                Franklin, MU 83454<br>
+                (999) 999 9999 <br>
+                contact@theurl.com
+            </aside>
+            <p class="footer-bar">&copy;2018 All Rights Reserved &vert; The 24-7 Weather Teller &vert; <span id="currentdate"></span></p>
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+    </body>
+</html>
