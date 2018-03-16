@@ -40,9 +40,9 @@
         <h2>The City of Greenville</h2>
         <div class="flexbox">
             <picture>
-                <source srcset="images/franklin-400px.jpg" media="(max-width: 599px)">
-                <source srcset="images/franklin-700px.jpg" media="(max-width: 1023px)">
-                <img src="images/franklin-900px.jpg" alt="Franklin">
+                <source srcset="images/greenville-small.jpg" media="(max-width: 599px)">
+                <source srcset="images/greenville-medium.jpg" media="(max-width: 1023px)">
+                <img src="images/greenville-large.jpg" alt="Greenville">
             </picture>
             <div>
                 <section>
@@ -53,7 +53,7 @@
                             <div class ="summary">
                                 <div class="highlow">
                                     <p>High: <span id="high">90</span>&deg;F</p>  
-                                    <p>Low: <span id="low">66&deg;</span>F</p>  
+                                    <p>Low: <span id="low">66</span>&deg;F</p>  
                                     <p>Current Temperature: <span id="c-temp">temp</span>&deg;F</p>
                                 </div>
                                 <div class="current">
@@ -110,11 +110,11 @@
         </section>
 
         <article class= "container">
-                <img src="images/Franklin%20300px(x2).jpg" alt="Franklin"> 
+                <img src="images/greenville.jpg" alt="Greenville"> 
                 <div>
                     <h3>Greenville Breaks Record</h3>
                     <p class="town-article">
-                        Franklin is a city just south of Nashville, in Tennessee. A key site of the American Civil War, it’s home to 2 properties exploring the 1864 Battle of Franklin: Carter House and Carnton Plantation, which includes the McGavock Confederate Cemetery. The 1858 Lotz House contains a large collection of 19th-century furniture. Downtown’s Main Street is lined with galleries, antique shops and restored Victorian buildings.
+                        Greenville is a city in South Carolina. It’s home to the Greenville County Museum of Art, with works by Southern artists spanning several centuries. Exhibits at the Upcountry History Museum tell the story of upstate South Carolina. Falls Park on the Reedy has riverside gardens, a suspension bridge and waterfall views. Multi-use trails wind around lakes and hills in Paris Mountain State Park, north of the city.
                     </p>
                 </div>
         </article>		  
@@ -133,7 +133,7 @@
 
       <script src="scripts/hamburger.js"></script>
       <script src="scripts/currentdate.js"></script>  
-      <script src="scripts/wu-weather.js"></script>
+      <script src="scripts/wu-weather-G.js"></script>
       <script> 
             var article = document.querySelector('article');
             var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';

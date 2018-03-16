@@ -40,9 +40,9 @@
         <h2>The City of Springfield</h2>
         <div class="flexbox">
             <picture>
-                <source srcset="images/franklin-400px.jpg" media="(max-width: 599px)">
-                <source srcset="images/franklin-700px.jpg" media="(max-width: 1023px)">
-                <img src="images/franklin-900px.jpg" alt="Franklin">
+                <source srcset="images/springfield-small.jpg" media="(max-width: 599px)">
+                <source srcset="images/springfield-medium.jpg" media="(max-width: 1023px)">
+                <img src="images/springfield-large.jpg" alt="Springfield">
             </picture>
             <div>
                 <section>
@@ -53,7 +53,7 @@
                             <div class ="summary">
                                 <div class="highlow">
                                     <p>High: <span id="high">90</span>&deg;F</p>  
-                                    <p>Low: <span id="low">66&deg;</span>F</p>  
+                                    <p>Low: <span id="low">66</span>&deg;F</p>  
                                     <p>Current Temperature: <span id="c-temp">temp</span>&deg;F</p>
                                 </div>
                                 <div class="current">
@@ -110,11 +110,11 @@
         </section>
 
         <article class= "container">
-                <img src="images/Franklin%20300px(x2).jpg" alt="Franklin"> 
+                <img src="images/springfield.jpg" alt="Springfield"> 
                 <div>
                     <h3>Springfield Breaks Record</h3>
                     <p class="town-article">
-                        Franklin is a city just south of Nashville, in Tennessee. A key site of the American Civil War, it’s home to 2 properties exploring the 1864 Battle of Franklin: Carter House and Carnton Plantation, which includes the McGavock Confederate Cemetery. The 1858 Lotz House contains a large collection of 19th-century furniture. Downtown’s Main Street is lined with galleries, antique shops and restored Victorian buildings.
+                        Springfield is a city in western Massachusetts. Beside the Connecticut River, Naismith Memorial Basketball Hall of Fame commemorates the sport in a striking building. Collections at the Springfield Museums include American paintings and sculpture, scientific exhibits and Asian art. The Amazing World of Dr. Seuss celebrates the beloved children’s author. Springfield Armory documents 2 centuries of military history.
                     </p>
                 </div>
         </article>		  
@@ -133,7 +133,7 @@
 
       <script src="scripts/hamburger.js"></script>
       <script src="scripts/currentdate.js"></script>  
-      <script src="scripts/wu-weather.js"></script>
+      <script src="scripts/wu-weather-S.js"></script>
       <script> 
             var article = document.querySelector('article');
             var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
