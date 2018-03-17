@@ -45,7 +45,33 @@
                 
             </article>
             <section class="grid">
-
+                <article class="town">
+                    <h3><span id="name1">placeholder</span></h3>
+                    <p>"<span id="motto1" class="motto">placeholder</span>"</p>
+                    <p>Year Founded: <span id="year1">placeholder</span></p>
+                    <p>Current Population: <span id="pop1">placeholder</span></p>
+                    <p>Annual Rainfall: <span id="rainfall1">placeholder</span></p>
+                    <p class= "link"><a href="franklin.html">More information...</a></p>
+                    <img src="images/franklin-900px.jpg" alt="City of Franklin">
+                </article>
+                <article class="town">
+                    <h3><span id="name2">placeholder</span></h3>
+                    <p>"<span id="motto2" class="motto">placeholder</span>"</p>
+                    <p>Year Founded: <span id="year2">placeholder</span></p>
+                    <p>Current Population: <span id="pop2">placeholder</span></p>
+                    <p>Annual Rainfall: <span id="rainfall2">placeholder</span></p>
+                    <p class= "link"><a href="greenville.html">More information...</a></p>
+                    <img src="images/greenville-large.jpg" alt="City of Greenville">
+                </article>
+                <article class="town">
+                    <h3><span id="name3">placeholder</span></h3>
+                    <p>"<span id="motto3" class="motto">placeholder</span>"</p>
+                    <p>Year Founded: <span id="year3">placeholder</span></p>
+                    <p>Current Population: <span id="pop3">placeholder</span></p>
+                    <p>Annual Rainfall: <span id="rainfall3">placeholder</span></p>
+                    <p class= "link"><a href="springfield.html">More information...</a></p>
+                    <img src="images/springfield-large.jpg" alt="City of Springfield">
+                </article>
             </section>
         </main>   
 
@@ -61,45 +87,7 @@
 
         <script src="scripts/hamburger.js"></script>
         <script src="scripts/currentdate.js"></script>
-        <script>
-            var section = document.querySelector('section');
-            var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-            var request = new XMLHttpRequest();
-            request.open('GET', requestURL);
-            request.responseType = 'json';
-            request.send();
-            request.onload = function() {
-                var towns = request.response;
-                showTowns(towns);
-            }
-            function showTowns(jsonObj) {
-                var towns = jsonObj['towns'];
-
-                for (var i = 0; i < towns.length; i++) {
-                    if (i === 2) { continue; }
-                    var myArticle = document.createElement('article');
-                    var myH3 = document.createElement('h3');
-                    var myPara1 = document.createElement('p');
-                    var myPara2 = document.createElement('p');
-                    var myPara3 = document.createElement('p');
-                    var myPara4 = document.createElement('p');
-                   
-                    myH3.textContent = towns[i].name;
-                    myPara1.textContent = 'Motto: ' + towns[i].motto;
-                    myPara2.textContent = 'Year Founded: ' + towns[i].yearFounded;
-                    myPara3.textContent = 'Current Population: ' + towns[i].currentPopulation;
-                    myPara4.textContent = 'Average Rainfall: ' + towns[i].averageRainfall;
-                    
-                    myArticle.appendChild(myH3);
-                    myArticle.appendChild(myPara1);
-                    myArticle.appendChild(myPara2);
-                    myArticle.appendChild(myPara3);
-                    myArticle.appendChild(myPara4);
-                    
-                    section.appendChild(myArticle);
-                } 
-            }
-        
-        </script>
+        <script src="scripts/towns-data.js"></script>
+       
     </body>
 </html>

@@ -21,6 +21,7 @@ header.container{
     justify-content: space-around;
     align-items: center;
     align-content: center;
+    margin-top: 1em;
 }
 
 header {
@@ -29,10 +30,10 @@ header {
     
 header h1 {
     font-family: 'Dancing Script', cursive;
-    font-size: 1.6em;
+    font-size: 2.4em;
     color: #6096f2; 
     text-align: center;
-    margin-bottom: 0;
+    margin: 0;
 }
     
 header.container img { 
@@ -44,10 +45,9 @@ header.container img {
 
 header .subheading {
     font-family: 'Dancing Script', cursive;
-    font-size: 0.7em;
+    font-size: 1em;
     color: #000000;
     text-align: center;
-    margin-bottom: 1.5em;
 }
 
 nav button {
@@ -105,7 +105,7 @@ main h2, h3{
 
 main h2 {
     font-family: 'Dancing Script', cursive;
-    font-size: 1.3em;
+    font-size: 2.2em;
     color: #000000; 
     margin: auto ;
     padding: 0.5em;
@@ -121,7 +121,7 @@ main .flexbox picture img {
 
 main h3 {
     font-family: Britannic, sans-serif;
-    font-size: 0.8em;
+    font-size: 1.3em;
     color: #000000; 
 }
 
@@ -133,7 +133,6 @@ main .summary{
 main p, article.info ul li {
     font-family: Calibri, sans-serif;
     color: #000000;
-    font-size: 0.8em;
     text-align: left;
 }
 
@@ -173,14 +172,13 @@ main article img {  /* This structure refers to img elements that are the poster
    /* fill the page in the small/phone view */
 }
 
-.flexbox1>img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-    width: 50%;
-    max-width: 500px;
+.flexbox1>img {  
+    width: 85%;
+    max-width: 100%;
     padding-bottom: 0.8em;
+    padding-top: 0;
     display: flex;
     margin: 0 auto;
-    
-   /* fill the page in the small/phone view */
 }
 
 main article p.town-article, p.w-story {
@@ -194,7 +192,7 @@ footer {
     font-family: "Arial Narrow", sans-serif;
     background-color: #6096f2;
     color: #ffffff;
-    font-size: 0.5em;
+    font-size: 0.8em;
     text-align: center;
     margin-top: 1.5em;
     padding: 1em 0 1em 0;
@@ -203,12 +201,16 @@ footer {
 main > .grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 1em;
+    grid-gap: 1.5em;
     text-align: center;
     padding-top: 1em; 
 }
 
-.gallery-image{
+section.grid {
+    margin-top: 0.5rem;
+}
+
+.gallery-image {
     width: 100%;
     max-width: 400px;
     background-color: #fddce7;
@@ -217,8 +219,11 @@ main > .grid {
     margin-right: auto;       
 }
 
-.gallery-image img{
+.gallery-image img,article.town img{
     width: 90%;  
+    max-width: 100%;
+    margin-top: auto;
+    padding: 0;
 }
 
 form#w-form {
@@ -324,10 +329,17 @@ article.info p {
 
 article.flexbox1 {
     box-shadow: 5px 4px 8px 5px rgba(0, 0, 0, 0.2);
-    margin-top: 1em;
     padding-top: 1%;
 }
 
+article.town p {
+    text-align: center;
+}
+
+article.town p.link {
+    font-family: cursive;
+    font-size: 0.8rem;
+}
 
 
 /* Other Class Selectors */
