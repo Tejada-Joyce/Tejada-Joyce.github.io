@@ -9,6 +9,10 @@
         font-size: 2em;
     }
     
+    nav ul {
+        font-size: 1.2rem
+    }
+    
     nav ul li a {
         padding: 0.8rem 2rem;
     }
@@ -100,4 +104,7 @@
         font-size: 1.5em;
     }
     
+    p.w-story {
+        line-height: 1.5em;
+    }
 }

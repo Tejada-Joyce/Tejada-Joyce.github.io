@@ -39,6 +39,7 @@
     
     main h3 {
         font-size: 1.3em;
+        letter-spacing: 0.04rem;
     }
     
     main p, article.info ul li {
