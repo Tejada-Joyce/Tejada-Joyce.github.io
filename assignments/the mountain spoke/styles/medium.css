@@ -31,22 +31,25 @@
     nav ul.hide {
         display: flex;
     }
-        
-    main h2 {
-        margin: 1em 1.65em 0 ;
-    }
     
     main h3 {
         letter-spacing: 0.04rem;
     }
     
-    main section article.flexbox1 div p{
+    main div article.flexbox1 div p,{
         line-height: 2rem;
     }
+    
     main p.call {
         font-size: 1.5rem;
         width: 100%;
     }
+    
+    main p.outsand {
+        font-size: 1.3rem;
+        line-height: 2.3rem;
+    }
+    
     main p {
         font-size: 1em;
     }
@@ -56,23 +59,23 @@
         margin: 0 auto;
     }
     
-    main article.flexbox1{
+    main .flexbox1{
         display: flex;
         justify-content: space-around;
         align-items:center;
     }
     
-    main article.flexbox1 > img{ 
+    main .flexbox1 > img{ 
         width: 45%;
         margin: 3%;
     } 
     
-    main section article.flexbox1 > img{ 
+    main div article.flexbox1 > img{ 
         margin: 2% 3%;
         width: 40%; 
     } 
     
-    main section article.flexbox1 > img.order{ 
+    main div article.flexbox1 > img.order{ 
         order: -1;
     } 
 }

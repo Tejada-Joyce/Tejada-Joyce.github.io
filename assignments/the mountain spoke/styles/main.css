@@ -108,7 +108,7 @@ main h2, h3{
     text-align: center;
 }
 
-main section article.flexbox1 {
+main div article.flexbox1 {
     background-color: #f3c779;
     margin:1.5rem auto;
     padding-bottom: 1rem;
@@ -132,7 +132,7 @@ main p {
     text-align: left;
 }
 
-main article.flexbox1 > img {  
+main .flexbox1 > img {  
     width: 80%;
     max-width: 100%;
     padding: 0;
@@ -142,16 +142,16 @@ main article.flexbox1 > img {
     box-shadow: 5px 4px 8px 5px rgba(0, 0, 0, 0.2);
 }
 
-main article.flexbox1 > div {
+main .flexbox1 > div {
     margin: auto 3%;
 }
 
-main section article.flexbox1 div p{
+main div article.flexbox1 div p{
     text-align: center;   
 }
 
 main p.outsand {
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: center;
     line-height: 1.6rem;
 }
