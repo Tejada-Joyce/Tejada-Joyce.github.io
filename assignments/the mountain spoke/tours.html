@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Moutain Spoke</title>
+        <meta name="author" content="Joyce Tejada">
+        <meta name="description" content="Home page for Mountain Spoke.">
+        <!-- external style references in the proper cascading order -->    
+        <link href="https://fonts.googleapis.com/css?family=Chicle" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet"><!-- Google API font reference -->
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src = "//code.jquery.com/jquery-3.3.1.min.js"></script>
+    </head>
+    <body>
+
+      <header class="container">
+        <img src="images/logo.jpg" alt="The site logo" >
+        <div>
+          <h1>The Mountain Spoke</h1>
+            <div class = "subheading">Bikes are your life. Bikes are our life.</div>
+        </div>
+      </header>
+
+      <!-- site navigation use placeholder references -->
+      <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="#">Tours</a></li>
+            <li><a href="#">Event</a></li>
+            <li><a href="#">Sales</a></li>
+            <li><a href="#">Service Repair</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>		
+      </nav>
+        
+      <main>
+          <h2>Adventure Tours</h2>
+          <article class="flexbox1">
+                    <div>
+                        <h3>Time to live</h3>
+                        <p>Sometimes trying something new can be scary. But, aren't you tired of the same boring vacations? It is time to overcome those fears that don't let you live. And what better way to do that than by taking advantage of the beautiful views of Bozeman, Montana! </p>
+                        <p>Hurry and see which of these tours suits you better, and start living!</p>
+                    </div>
+                    <img src="images/tour.jpg" alt= "Adventure Tours">
+         </article>
+          
+         <div class="grid">
+                <article class="info">
+                    <h3>Gallagator Trail</h3>
+                    <p>Days: Monday, Wednesday, Friday</p>
+                    <p>Length:  2.2 total miles</p>
+                    <p>Skill Level Required: Easy </p>
+                    <p>Cost: </p>
+                    <p>Location: Located in Bozeman, running southwest from South Church to the Museum of the Rockies on Kagy Boulevard. </p>
+                    <img src="images/gallagator.jpg" alt="Gallagator Trail">
+                </article>
+                <article class="info">
+                    <h3>West Bridger</h3>
+                    <p>Days: Sunday, Tuesday<p>
+                    <p>Length: 13.7 total miles</p>
+                    <p>Skill Level Required: Easy to moderate</p>
+                    <p>Cost: </p>
+                    <p>Location: Found on the north edge of Bozeman along the western flank of the Bridger Range. </p>
+                    <img src="images/bridger.jpg" alt="West Bridger">
+                </article>
+                <article class="info">
+                    <h3>Heather Lake</h3>
+                    <p>Days: Thursday, Saturday</p>
+                    <p>Length: out and back 9 miles</p>
+                    <p>Skill Level Required: Advanced </p>
+                    <p>Cost: </p>
+                    <p>Location: South of Bozeman down Hyalite Canyon road, about a mile past the waterfall. </p>
+                    <img src="images/heather-lake.jpg" alt="Heather Lake">
+                </article>
+            </div>
+      </main> 
+        
+      <footer>
+        <aside>
+            contact@theurl.com
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved &vert; The Mountain Spoke &vert; <span id="currentdate"></span></p>
+      </footer>
+
+      <script src="scripts/hamburger.js"></script>
+      <script src="scripts/currentdate.js"></script> 
+    </body>
+</html>

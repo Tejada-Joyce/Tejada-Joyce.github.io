@@ -32,14 +32,22 @@
         display: flex;
     }
     
-    main h3 {
-        letter-spacing: 0.04rem;
+    main h2 {
+        font-size: 3.2rem;
+        padding: 2%;
     }
     
-    main div article.flexbox1 div p {
+    main h1, h2, h3 {
+        letter-spacing: 0.05rem;
+    }
+    
+    main p {
+        font-size: 1rem;
+    }
+    
+    main div article.flexbox1 p {
         line-height: 2rem;
     }
-    
     main p.call {
         font-size: 1.5rem;
         width: 100%;
@@ -50,16 +58,7 @@
         line-height: 2.3rem;
     }
     
-    main p {
-        font-size: 1em;
-    }
-    
-    main .flexbox picture img {
-        display: flex;
-        margin: 0 auto;
-    }
-    
-    main .flexbox1{
+    main .flexbox1 {
         display: flex;
         justify-content: space-around;
         align-items:center;
@@ -78,4 +77,10 @@
     main div article.flexbox1 > img.order{ 
         order: -1;
     } 
+    
+    main > .grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1.5rem;
+        line-height: normal;
+    }
 }
