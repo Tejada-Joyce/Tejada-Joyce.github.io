@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Moutain Spoke</title>
+        <meta name="author" content="Joyce Tejada">
+        <meta name="description" content="Home page for Mountain Spoke.">
+        <!-- external style references in the proper cascading order -->    
+        <link href="https://fonts.googleapis.com/css?family=Chicle|Handlee" rel="stylesheet"> <!-- Google API font reference -->
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src = "//code.jquery.com/jquery-3.3.1.min.js"></script>
+    </head>
+    <body>
+
+      <header class="container">
+        <img src="images/logo.jpg" alt="The site logo" >
+        <div>
+          <h1>The Mountain Spoke</h1>
+            <div class = "subheading">Bikes are your life. Bikes are our life.</div>
+        </div>
+      </header>
+
+      <!-- site navigation use placeholder references -->
+      <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Tours</a></li>
+            <li><a href="#">Event</a></li>
+            <li><a href="#">Sales</a></li>
+            <li><a href="#">Service Repair</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>		
+      </nav>
+
+      <main>
+        <article class="flexbox1">
+                <img src="images/event.jpg" alt="Cycling Event">
+                <div>
+                    <p class="outsand">Don't miss the BEST<br>
+                    ANNUAL CYCLING EVENT.</p>
+                    <p class="call">Register Now !!</p>
+                </div>     
+        </article>
+        <section>
+            <article class="flexbox1">
+                <div>
+                    <h2>Adventure Tours</h2>
+                    <p>Life is too short not to enjoy every oppotunity it gives us. Come and enjoy the remarkable views of Bozeman, Montana.</p>
+                    <p><a href="">More information ...</a></p>
+                </div>
+                <img src="images/tour.jpg" alt= "Adventure Tours">
+            </article>
+            <article class="flexbox1">
+                <div>
+                    <h2>Sales</h2>
+                    <p>We know how much you love bikes, and that is why we created these offers specially for you.</p>
+                    <p><a href="">More information ...</a></p>
+                </div> 
+                <img src="images/sales.jpg" alt= "Bicycle Sales" class="order">
+            </article>
+            <article class="flexbox1">
+                <div>
+                    <h2>Service Repair</h2>
+                    <p>The services you need so your bike is ready to go wherever you want.</p>
+                    <p><a href="">More information ...</a></p>
+                </div>
+                <img src="images/repair.jpg" alt= "Service Repair">
+            </article>
+
+        </section>
+
+      </main>
+
+      <footer>
+        <aside>
+            contact@theurl.com
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved &vert; The Mountain Spoke &vert; <span id="currentdate"></span></p>
+      </footer>
+
+      <script src="scripts/hamburger.js"></script>
+      <script src="scripts/currentdate.js"></script> 
+    </body>
+</html>

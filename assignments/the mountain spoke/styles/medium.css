@@ -1,0 +1,78 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    
+    header h1 {
+        font-size: 4.2rem;
+    }
+    
+    header .subheading {
+        font-size: 1rem;
+    }
+    
+    nav button { 
+        display:none;
+    }  /* hamburger button does not need to be shown */
+    
+    nav #primaryNav{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    nav #primaryNav li{
+        flex-grow: 1;
+    }
+    
+    nav ul li a {
+        padding: 0.8rem 0.3rem ;
+    }
+    
+    nav ul.hide {
+        display: flex;
+    }
+        
+    main h2 {
+        margin: 1em 1.65em 0 ;
+    }
+    
+    main h3 {
+        letter-spacing: 0.04rem;
+    }
+    
+    main section article.flexbox1 div p{
+        line-height: 2rem;
+    }
+    main p.call {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    main p {
+        font-size: 1em;
+    }
+    
+    main .flexbox picture img {
+        display: flex;
+        margin: 0 auto;
+    }
+    
+    main article.flexbox1{
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+    }
+    
+    main article.flexbox1 > img{ 
+        width: 45%;
+        margin: 3%;
+    } 
+    
+    main section article.flexbox1 > img{ 
+        margin: 2% 3%;
+        width: 40%; 
+    } 
+    
+    main section article.flexbox1 > img.order{ 
+        order: -1;
+    } 
+}

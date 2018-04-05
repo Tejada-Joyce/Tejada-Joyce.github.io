@@ -1,0 +1,53 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    header.container {
+        margin-top: 1.3em;
+        margin-bottom: 1.3em;
+    }
+    
+    header h1 {
+        font-size:7rem;
+    }
+    
+    header .subheading {
+        font-size: 1.6rem;
+    }
+    
+    nav ul {
+        font-size: 1.4rem;
+    }
+    
+    nav ul li a {
+        padding: 0.8rem 2rem;
+    }
+    
+    main h2 {
+        margin: 0.5em 1.75em 0 1.75em;
+        padding: 0.3em 0 0 0;
+        font-size: 4em;
+    }
+    
+    main h3 {        
+        font-size: 1.69em;
+    }
+    
+    main section p {
+        font-size:1.3em;
+    }
+    
+    main p.outsand {
+        font-size: 1.8rem;
+        line-height: 3rem;
+        word-spacing: 1rem;
+    }
+    
+    main p.call {
+        font-size: 2.2rem;
+        word-spacing: 1rem;
+    }
+    
+    footer {
+        font-size: 1.3rem;
+    }
+    
+}
