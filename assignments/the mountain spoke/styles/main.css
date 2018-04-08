@@ -108,10 +108,10 @@ nav li > ul {
 	position: relative;
 	width:100%;
 	clear:both;
-    background-color: #5e2a08;
 	/* Hide the Submenus */
 	display:none;
     margin: 0 auto;
+    background-color:black
 }
 
 nav li > ul a {
@@ -120,16 +120,12 @@ nav li > ul a {
     text-decoration: none;
 }
 
-nav li > ul li{
-    margin: 3%;
-}
-
 nav li > ul li.active a {
-    background-color: #c55a11;
+    background-color: #8d400c;
 }
 
 nav li > ul a:hover {
-    background-color: #8d400c;;
+    background-color: #5e2a08;
 }
 
 main h2, h3{

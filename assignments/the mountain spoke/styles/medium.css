@@ -24,6 +24,10 @@
         flex-grow: 1;
     }
     
+    nav li > ul {
+        position: absolute;
+        width:17%;
+    }
     nav ul li a {
         padding: 0.8rem 0.3rem ;
     }

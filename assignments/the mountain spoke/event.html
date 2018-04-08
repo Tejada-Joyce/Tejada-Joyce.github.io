@@ -15,6 +15,13 @@
         <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src = "//code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script>
+            $(function(){
+                $('.hide > li').click( function(){
+                    $(this).children("ul").slideToggle(200);
+                })
+            })
+	   </script>
     </head>
     <body>
 
@@ -27,15 +34,21 @@
         </header>
 
         <!-- site navigation use placeholder references -->
-        <nav>
+        <nav class="main-menu">
             <button onclick="toggleNavMenu()">&#9776;</button>
             <ul id="primaryNav" class="hide">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="tours.html">Tours</a></li>
                 <li class="active"><a href="#">Event</a></li>
-                <li><a href="#">Sales</a></li>
-                <li><a href="#">Service Repair</a></li>
-                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Sales</a>
+                    <ul class="submenu">
+                        <li><a href="#">Bicycle One</a></li>
+                        <li><a href="#">Bicycle Two</a></li>
+                        <li><a href="#">Bicycle Three</a></li>
+                    </ul>
+                </li>
+                <li><a href="services.html">Service Repair</a></li>
+                <li><a href="contact.html">Contact us</a></li>
             </ul>		
         </nav>
         
