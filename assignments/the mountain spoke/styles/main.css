@@ -30,7 +30,7 @@ header {
     padding: 0;
 }
 
-h1, h2, h3, p.call {
+h1, h2, h3, main button {
     font-family: 'Chicle', cursive;
 }
     
@@ -104,6 +104,34 @@ nav ul.hide {
     display: none;
 }
 
+nav li > ul {
+	position: relative;
+	width:100%;
+	clear:both;
+    background-color: #5e2a08;
+	/* Hide the Submenus */
+	display:none;
+    margin: 0 auto;
+}
+
+nav li > ul a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+nav li > ul li{
+    margin: 3%;
+}
+
+nav li > ul li.active a {
+    background-color: #c55a11;
+}
+
+nav li > ul a:hover {
+    background-color: #8d400c;;
+}
+
 main h2, h3{
     text-align: center;
 }
@@ -162,19 +190,21 @@ main p.outsand {
     line-height: 1.6rem;
 }
 
-main p.call {
+main button {
     font-size: 1.3rem;
-    text-align: center;
     border: 2px solid rgb(197, 90, 17);
     border-radius: 15px;
     background-color: rgb(197, 90, 17);
     padding: 4%;
     letter-spacing: 0.1rem;
     width: 60%;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
 }
 
-main p.call a {
+main button a {
     text-decoration: none;
     color: white;
 }

@@ -15,6 +15,13 @@
         <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src = "//code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script>
+            $(function(){
+                $('.hide > li').click( function(){
+                    $(this).children("ul").slideToggle(200);
+                })
+            })
+	   </script>
     </head>
     <body>
 
@@ -27,13 +34,19 @@
         </header>
 
         <!-- site navigation use placeholder references -->
-        <nav>
+        <nav class="main-menu">
             <button onclick="toggleNavMenu()">&#9776;</button>
             <ul id="primaryNav" class="hide">
                 <li class="active"><a href="#">Home</a></li>
                 <li><a href="tours.html">Tours</a></li>
                 <li><a href="event.html">Event</a></li>
-                <li><a href="#">Sales</a></li>
+                <li><a href="#">Sales</a>
+                    <ul class="submenu">
+                        <li class="active"><a href="#">Bicycle One</a></li>
+                        <li><a href="#">Bicycle Two</a></li>
+                        <li><a href="#">Bicycle Three</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">Service Repair</a></li>
                 <li><a href="#">Contact us</a></li>
             </ul>		
@@ -46,7 +59,7 @@
                     <p class="outsand">Ready to live the <br>
                         MOST EXCITING ADVENTURE <br>
                         of your life? </p>
-                    <p class="call"><a href="event.html">Click Here Now !!</a></p>
+                    <button type="button"><a href="event.html">Click Here Now !!</a></button>
                 </div>     
             </div>
             <div>

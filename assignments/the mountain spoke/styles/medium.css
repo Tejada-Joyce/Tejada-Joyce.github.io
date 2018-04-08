@@ -48,7 +48,8 @@
     main div article.flexbox1 p {
         line-height: 2rem;
     }
-    main p.call {
+    
+    main button {
         font-size: 1.5rem;
         width: 100%;
     }
