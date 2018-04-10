@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Moutain Spoke</title>
+        <meta name="author" content="Joyce Tejada">
+        <meta name="description" content="Home page for Mountain Spoke.">
+        <!-- external style references in the proper cascading order -->    
+        <link href="https://fonts.googleapis.com/css?family=Chicle" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet"><!-- Google API font reference -->
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src = "//code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script>
+            $(function(){
+                $('.hide > li').click( function(){
+                    $(this).children("ul").slideToggle(200);
+                })
+            })
+	   </script>
+    </head>
+    <body>
+
+        <header class="container">
+            <img src="images/logo.jpg" alt="The site logo" >
+            <div>
+              <h1>The Mountain Spoke</h1>
+                <div class = "subheading">Bikes are your life. Bikes are our life.</div>
+            </div>
+        </header>
+
+        <!-- site navigation use placeholder references -->
+        <nav class="main-menu">
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li class="active"><a href="#">Sales</a>
+                    <ul>
+                        <li><a href="sales1.html" class="submenu">Bicycle One</a></li>
+                        <li><a href="sales2.html" class="submenu">Bicycle Two</a></li>
+                        <li class="active"><a href="#" class="submenu">Bicycle Three</a></li>
+                    </ul>
+                </li>
+                <li><a href="services.html">Service Repair</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>		
+        </nav>
+        
+        <main>
+            <h2>BMX Bike</h2>
+            
+            <article class="flexbox1">
+                <img src="images/bmx-b.jpg" alt= "BMX Bicycle">
+                <div class="sales">
+                    <h3>Framed Attack XL BMX Bike</h3>
+                    <p class="definition">This bicycle is an off-road sport bicycle used for racing and stunt riding. BMX means bicycle motocross.</p>
+                    <p class="small" id="red">Sale Price</p>
+                    <p class="price">&dollar;231.00</p>
+                    <p class="small">Compare at: &dollar;420.00</p>
+                    <p class="discount">45&percnt; OFF</p>
+                    <p class="small">You save &dollar;189.00 Instantly</p>
+                    <p><b>Color:</b> Black or Gray</p>
+                    <button type="button" onclick="alert('You added this item successfully to the Cart.')">Add to Cart</button>
+                </div>
+            </article>
+            
+            <div>
+                <table>
+                    <tr>
+                        <th>Frame</th>
+                        <td>Chromoly Front Triangle, Hi-Ten Rear Triangle</td>
+                    </tr>
+                    <tr>
+                        <th>Fork</th>
+                        <td>Chromoly; 1 1/8"</td>
+                    </tr>
+                    <tr>
+                        <th>Bottom Bracket	</th>
+                        <td>American Loose Ball Unsealed</td>
+                    </tr>
+                    <tr>
+                        <th>Pedals</th>
+                        <td>9/16" Wellgo Nylon Composite</td>
+                    </tr>
+                    <tr>
+                        <th>Cassette/ Freewheel</th>
+                        <td>9 Tooth Cassette</td>
+                    </tr>
+                    <tr>
+                        <th>Front Hub</th>
+                        <td>Alloy 36H Unsealed 3/8" Axle</td>
+                    </tr>
+                    <tr>
+                        <th>Rear Hub</th>
+                        <td>Alloy 36H Unsealed 14mm Axle</td>
+                    </tr>
+                    <tr>
+                        <th>Rims</th>
+                        <td>Alloy Double Wall 36 Hole</td>
+                    </tr>	
+                    <tr>
+                        <th>Tires</th>
+                        <td>20" X 2.125" Front, 20" X 1.95" Rear</td>
+                    </tr>	
+                    <tr>
+                        <th>Rear Brake</th>
+                        <td>Framed Alloy U-Brake</td>
+                    </tr>
+                    <tr>
+                        <th>Front Brake</th>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <th>Brake Levers</th>
+                        <td>Framed Alloy Lever with Alloy Body</td>
+                    </tr>
+                    <tr>
+                        <th>Headset</th>
+                        <td>Standard 1 1/8" Loose Ball Unsealed</td>
+                    </tr>	
+                    <tr>
+                        <th>Handlebar</th>
+                        <td>2 Piece Chromoly 8" X 28"</td>
+                    </tr>	
+                    <tr>
+                        <th>Stem</th>
+                        <td>Framed Alloy Front Load</td>
+                    </tr>	
+                    <tr>
+                        <th>Tape/ Grip</th>
+                        <td>Velo Mushroom 150mm</td>
+                    </tr>
+                    <tr>
+                        <th>Saddle</th>
+                        <td>1 Piece Seat And Post</td>
+                    </tr>	
+                    <tr>
+                        <th>Seat Post</th>
+                        <td>25.4mm Alloy</td>
+                    </tr>	
+				</table>
+            </div>
+            
+        </main>
+        
+        <footer>
+            <aside>
+                <p>contact@theurl.com</p>
+            </aside>
+            <p class="footer-bar">&copy;2018 All Rights Reserved &vert; The Mountain Spoke &vert; <span id="currentdate"></span></p>
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script> 
+    </body>
+</html>
