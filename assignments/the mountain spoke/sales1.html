@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Moutain Spoke</title>
+        <meta name="author" content="Joyce Tejada">
+        <meta name="description" content="Home page for Mountain Spoke.">
+        <!-- external style references in the proper cascading order -->    
+        <link href="https://fonts.googleapis.com/css?family=Chicle" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet"><!-- Google API font reference -->
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src = "//code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script>
+            $(function(){
+                $('.hide > li').click( function(){
+                    $(this).children("ul").slideToggle(200);
+                })
+            })
+	   </script>
+    </head>
+    <body>
+
+        <header class="container">
+            <img src="images/logo.jpg" alt="The site logo" >
+            <div>
+              <h1>The Mountain Spoke</h1>
+                <div class = "subheading">Bikes are your life. Bikes are our life.</div>
+            </div>
+        </header>
+
+        <!-- site navigation use placeholder references -->
+        <nav class="main-menu">
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li class="active"><a href="#">Sales</a>
+                    <ul>
+                        <li class="active"><a href="#" class="submenu">Bicycle One</a></li>
+                        <li><a href="sales2.html" class="submenu">Bicycle Two</a></li>
+                        <li><a href="sales3.html" class="submenu">Bicycle Three</a></li>
+                    </ul>
+                </li>
+                <li><a href="services.html">Service Repair</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>		
+        </nav>
+        
+        <main>
+            <h2>Mountain Bike</h2>
+            
+            <article class="flexbox1">
+                <img src="images/mountain-b.jpg" alt= "Mountain Bicycle">
+                <div class="sales">
+                    <h3>2018 Gravity Nugget </h3>
+                    <p class="definition">This bicycle is designed for off-road cycling. It shares similarities with other bikes, but incorporate features designed to enhance durability and performance in rough terrain.
+                    <p class="small" id="red">Sale Price</p>
+                    <p class="price">&dollar;183.60</p>
+                    <p class="small">Compare at: &dollar;459.00</p>
+                    <p class="discount">60&percnt; OFF</p>
+                    <p class="small">You save &dollar;183.60 Instantly</p>
+                    <p><b>Color:</b> Black or Red</p>
+                    <button type="button" onclick="alert('You added this item successfully to the Cart.')">Add to Cart</button>
+                </div>
+            </article>
+            
+            <section>
+                <table>
+					  <tr>
+						<th>Frame</th>
+						<td>Custom Formed TIG Welded 6061 Aluminum Front Triangle. Aluminum Rear Triangle with replaceable rear derailleur hanger and guard</td>
+					  </tr>
+					  <tr>
+						<th>Fork</th>
+						<td>GRAVITY SUSPENSION FORK, ALLOY BLACK CROWN/ VP-A71 BLACK W/M-1D ALLOY BLACK CAP</td>
+					  </tr>
+					  <tr>
+						<th>Stem</th>
+						<td>Black Finish Aluminum Threadless 60mm</td>
+					  </tr>
+					  <tr>
+						<th>Handlebars</th>
+						<td>HL MTB-AL W:550MMxR:20MMx6 DEGREES, ALLOY BLACK</td>
+					  </tr>
+					  <tr>
+						<th>Brakes</th>
+						<td>CS V-Brakes Aluminum Alloy / POWER Aluminum Alloy Levers</td>
+					  </tr>
+					  <tr>
+						<th>Hubs</th>
+						<td>Gravity by Formula, Ball Bearing, Disc Compatible with QR Front Axle, Rear 7-speed</td>
+					  </tr>
+					  <tr>
+						<th>Rims</th>
+						<td>Gravity Alloy Single Wall Aluminum, Steel Spoke</td>
+					  </tr>
+					  <tr>
+						<th>Spokes</th>
+						<td>CP Steel</td>
+					  </tr>
+					  <tr>
+						<th>Chain/ Cassette</th>
+						<td>7 speed KMC/ SHIMANO MF-TZ21 14-28t</td>
+					  </tr>	
+					  <tr>
+						<th>Crank/ Shifter</th>
+						<td>HDL MTB with Chainring and ChainGuide / SQUARE Taper / SHIMANO SIS 7spd Shifter and SHIMANO TOURNEY Rear Derailleur</td>
+					  </tr>	
+					  <tr>
+						<th>Saddle</th>
+						<td>MTB Saddle with Deluxe Comfy padding</td>
+					  </tr>
+					  <tr>
+						<th>Seatpost</th>
+						<td>Black Finish Aluminum Mountain 27.2mm Seatpost, QR seatpost clamp
+                            (insert min 2 inches below lowest top tube weld / maintain clamp collar tightness)</td>
+					  </tr>
+					  <tr>
+						<th>Pedals</th>
+						<td>Mountain Platform, 9/16 inch axle</td>
+					  </tr>	
+					  <tr>
+						<th>Tires</th>
+						<td>NJK MTB BlackWall + bonus Rear Mount Kickstand</td>
+					  </tr>
+					  			  
+				</table>
+
+            </section>
+            
+        </main>
+        
+        <footer>
+            <aside>
+                <p>contact@theurl.com</p>
+            </aside>
+            <p class="footer-bar">&copy;2018 All Rights Reserved &vert; The Mountain Spoke &vert; <span id="currentdate"></span></p>
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script> 
+    </body>
+</html>
