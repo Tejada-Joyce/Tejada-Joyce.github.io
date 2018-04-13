@@ -162,7 +162,7 @@ main p, main article.info li {
     line-height: 1.5rem;
 }
 
-main .flexbox1 > img {  
+main .flexbox1 > img, main .flexbox1 > iframe {  
     width: 80%;
     max-width: 100%;
     padding: 0;

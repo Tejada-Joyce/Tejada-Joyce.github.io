@@ -74,7 +74,7 @@
         align-items:center;
     }
     
-    main .flexbox1 > img { 
+    main .flexbox1 > img , main .flexbox1 > iframe{ 
         width: 45%;
         margin: 3%;
     } 
@@ -134,5 +134,34 @@
     
     td span {
         font-size: 1rem;
+    }
+    
+    main #contact.flexbox1 {
+        align-items: flex-start;
+    }
+    
+    main > .flexbox1 > .simple {
+        width: 30%;
+        margin: 0 3%;
+    }
+    
+    main > .flexbox1 > form {
+        flex-grow: 4;
+    }
+    
+    main > .flexbox1 > form fieldset {
+        margin-right: 2%;
+    }
+    
+    main > .flexbox1 > form input {
+        width: 70%;
+    } 
+    
+    main > .flexbox1 > form textarea {
+        width: 90%;
+    }
+    
+    main > .flexbox1 > form input.submitBt {
+        width: 50%;
     }
 }
