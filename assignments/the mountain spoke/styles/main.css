@@ -404,3 +404,7 @@ section h3 {
     text-align: left;
     margin: 0;
 }
+
+main h3.special {
+    margin-top: 1.3rem;
+}
