@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Moutain Spoke</title>
+        <meta name="author" content="Joyce Tejada">
+        <meta name="description" content="Home page for Mountain Spoke.">
+        <!-- external style references in the proper cascading order -->    
+        <link href="https://fonts.googleapis.com/css?family=Chicle" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet"><!-- Google API font reference -->
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src = "//code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script>
+            $(function(){
+                $('.hide > li').click( function(){
+                    $(this).children("ul").slideToggle(200);
+                })
+            })
+	   </script>
+    </head>
+    <body>
+
+        <header class="container">
+            <img src="images/logo.jpg" alt="The site logo" >
+            <div>
+              <h1>The Mountain Spoke</h1>
+                <div class = "subheading">Bikes are your life. Bikes are our life.</div>
+            </div>
+        </header>
+        
+        <!-- site navigation use placeholder references -->
+        <nav class="main-menu">
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="#">Sales</a>
+                    <ul>
+                        <li><a href="sales1.html" class="submenu">Bicycle One</a></li>
+                        <li><a href="sales2.html" class="submenu">Bicycle Two</a></li>
+                        <li><a href="sales3.html" class="submenu">Bicycle Three</a></li>
+                    </ul>
+                </li>
+                <li class="active"><a href="#">Service Repair</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>		
+        </nav>
+        
+        <main>
+            <h2>Service Repair</h2>
+            <article class="flexbox1">
+                    <div>  
+                        <h3>Whatever you need, we can do it!</h3>
+                        <p>We are bike repair experts with the experience, knowledge and training to do the job right.</p>
+                        <p>Contact us anytime or bring your bike. We will help you decide what package or service is better for your bike.</p>
+                    </div>
+                    <img src="images/repair.jpg" alt= "Service Repair">
+                </article>
+        
+        
+        </main>
+        
+        <div>
+                <table>
+                    <tr>
+                        <th><span id="header1">placeholder</span></th>
+                        <th><span id="header2">placeholder</span></th>
+                        <th><span id="header3">placeholder</span></th>
+                    </tr>
+                    <tr>
+                        <td><span id="service1">placeholder</span></td>
+                        <td><span id="def1">placeholder</span></td>
+                        <td>&dollar;<span id="price1">placeholder</span></td>
+                    </tr>
+                    <tr>
+                        <td><span id="service2">placeholder</span></td>
+                        <td><span id="def2">placeholder</span></td>
+                        <td>&dollar;<span id="price2">placeholder</span></td>
+                    </tr>
+                    <tr>
+                        <td><span id="service3">placeholder</span></td>
+                        <td><span id="def3">placeholder</span></td>
+                        <td>&dollar;<span id="price3">placeholder</span></td>
+                    </tr>
+                    <tr>
+                        <td><span id="service4">placeholder</span></td>
+                        <td><span id="def4">placeholder</span></td>
+                        <td>&dollar;<span id="price4">placeholder</span></td>
+                    </tr>
+				</table>
+            </div>
+        
+        <footer>
+            <aside>
+                <p>contact@theurl.com</p>
+            </aside>
+            <p class="footer-bar">&copy;2018 All Rights Reserved &vert; The Mountain Spoke &vert; <span id="currentdate"></span></p>
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script> 
+        <script src="scripts/tableInfo.js"></script> 
+        
+    </body>
+</html>

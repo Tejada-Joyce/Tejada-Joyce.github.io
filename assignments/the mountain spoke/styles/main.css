@@ -386,3 +386,8 @@ td  {
 	font-size: 0.85rem;	
 	background-color: #f3c779;
 }
+
+td #service1, td #service2, td #service3, td #service4 {
+    font-weight: bolder;
+    letter-spacing: 0.03rem;
+}
