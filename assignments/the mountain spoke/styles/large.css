@@ -86,4 +86,12 @@
     main p.price {
         font-size: 2.7rem;
     }
+    
+    #header1, #header2, #header3{
+        font-size: 2rem;
+    }
+    
+    td span {
+        font-size: 1.3rem;
+    }
 }
