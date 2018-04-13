@@ -408,3 +408,8 @@ section h3 {
 main h3.special {
     margin-top: 1.3rem;
 }
+
+main video {
+    width: 80%;
+    margin-left: 5%;
+}
