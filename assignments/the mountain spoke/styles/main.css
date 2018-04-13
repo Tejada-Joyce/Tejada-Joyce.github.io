@@ -391,3 +391,16 @@ td #service1, td #service2, td #service3, td #service4 {
     font-weight: bolder;
     letter-spacing: 0.03rem;
 }
+
+.thanks p {
+    text-align: center;
+}
+
+section {
+    margin:0 3%;
+}
+
+section h3 {
+    text-align: left;
+    margin: 0;
+}
