@@ -1,0 +1,28 @@
+{
+    "headers": ["Service", 
+                "Definition", 
+                "Price"],
+               
+    "service": ["Basic Tune", 
+                "Preventative Maintenance", 
+                "Annual Peak Performance", 
+                "Comprenhensive Mechanical & Frameset Rebuild Package"],
+    
+    "definition": [ "Check and Adjust Shifting and Breaking Systems",
+                    {"long": ["Adjust Breaks Front and Rear",
+                             "Adjust All Bearings",
+                             "Adjust Derailleurs Front and Rear",
+                             "Lube Chain and Cables",
+                             "True Whlees Front and Rear",
+                             "Wipe Down Frame, Fork and Wheels"]
+                    },
+                   "Includes Everything in Preventative Maintenance with a Drivetrain Clean",
+                   "Complete Tear Down and Reasembly of Bike. (Includes all New Cables and Housing)" 
+                  ],
+    
+    "price": ["45.99", 
+              "79.99", 
+              "119.99", 
+              "275.99"]
+
+}
