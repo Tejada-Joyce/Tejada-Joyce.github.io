@@ -8,16 +8,16 @@
                 "Annual Peak Performance", 
                 "Comprenhensive Mechanical & Frameset Rebuild Package"],
     
-    "definition": [ "Check and Adjust Shifting and Breaking Systems",
-                    {"long": ["Adjust Breaks Front and Rear",
-                             "Adjust All Bearings",
-                             "Adjust Derailleurs Front and Rear",
-                             "Lube Chain and Cables",
-                             "True Whlees Front and Rear",
-                             "Wipe Down Frame, Fork and Wheels"]
+    "definition": [ "Check and adjust shifting and breaking systems",
+                    {"long": ["Adjust breaks front and rear",
+                             "Adjust all bearings",
+                             "Adjust derailleurs front and rear",
+                             "Lube chain and cables",
+                             "True whlees front and rear",
+                             "Wipe down frame, fork and wheels"]
                     },
-                   "Includes Everything in Preventative Maintenance with a Drivetrain Clean",
-                   "Complete Tear Down and Reasembly of Bike. (Includes all New Cables and Housing)" 
+                   "Includes everything in preventative maintenance with a drivetrain clean",
+                   "Complete tear down and reasembly of bike. (Includes all new cables and housing)" 
                   ],
     
     "price": ["45.99", 
