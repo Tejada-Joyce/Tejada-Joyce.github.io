@@ -1,4 +1,4 @@
-var requestURL = 'https://tejada-joyce.github.io/assignments/the%20mountain%20spoke/data/service.json';
+var requestURL = 'https://tejada-joyce.github.io/assignments/theMountainSpoke/data/service.json';
 var request = new XMLHttpRequest();
 request.open( 'GET', requestURL, true);
 request.send();
