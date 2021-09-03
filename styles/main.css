@@ -1,9 +1,19 @@
-* { margin: 5px; box-sizing: border-box; } 
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed&family=Lato&family=Roboto&display=swap');
+
+* { 
+    box-sizing: border-box; 
+}
+
 body { 
     font-size: 16px; 
     line-height: 32px;
-    font-family: Tahoma, Geneva, sans-serif;
+    /* font-family: Tahoma, Geneva, sans-serif; */
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Lato', Verdana, sans-serif;
     color: darkblue;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .style1 {
@@ -17,16 +27,19 @@ body {
 h1 {
     font-size: 2em;
     color: whitesmoke;
+    font-family: 'Asap Condensed', Verdana, sans-serif;
 }
 
 h2 {
     font-size: 1.5em;
     text-align: center;
     border-bottom: 1px solid #bbb;
+    font-family: 'Asap Condensed', sans-serif;
+
 }
 
 header, main, footer {
-    margin: 1.25rem auto;
+    /* margin: 1.25rem auto; */
     padding: .5rem;
 }
 
@@ -37,11 +50,22 @@ header, footer, footer a {
 }
 
 header img {
-    width: auto;
-    height: auto;
+    width: 30%;
     float: right;
+    border-radius: 5px;
+    margin-right: 1%;
 }
 
 footer {
-    font-size: 12px;
+    font-size: 1rem;
+}
+
+@media only screen and (min-width: 37.5em) {
+    header img {
+        width: 20%;
+    }
+}
+
+@media only screen and (min-width: 64em) {
+    
 }
